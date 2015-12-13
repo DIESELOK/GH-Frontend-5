@@ -1,0 +1,691 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* line 22, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+    line-height: 1;
+}
+
+/* line 24, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+    list-style: none;
+}
+
+/* line 26, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+    quotes: none;
+}
+
+/* line 103, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+
+/* line 32, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+    border: none;
+}
+
+/* line 116, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 12, ../sass/screen.scss */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* line 13, ../sass/screen.scss */
+body {
+    padding: 0;
+    margin: 0;
+    font: 15px 'Roboto Slab', serif;
+    background: #fff;
+    color: #000;
+}
+
+/* line 14, ../sass/screen.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, input, textarea {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    list-style: none;
+}
+
+/* line 20, ../sass/screen.scss */
+select, input, textarea {
+    vertical-align: middle;
+}
+
+/* line 21, ../sass/screen.scss */
+textarea {
+    vertical-align: top;
+}
+
+/* line 22, ../sass/screen.scss */
+:focus {
+    outline: none;
+}
+
+/* line 23, ../sass/screen.scss */
+input[type=submit] {
+    cursor: pointer;
+}
+
+/* line 24, ../sass/screen.scss */
+img, fieldset {
+    border: 0;
+}
+
+/* line 25, ../sass/screen.scss */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* line 26, ../sass/screen.scss */
+a:link, a:visited {
+    font: 15px 'Roboto Slab', serif;
+    color: #000;
+    text-decoration: none;
+}
+
+/* line 27, ../sass/screen.scss */
+a:hover {
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 31, ../sass/screen.scss */
+.float-r {
+    float: right !important;
+}
+
+/* line 32, ../sass/screen.scss */
+.float-l {
+    float: left !important;
+}
+
+/* line 33, ../sass/screen.scss */
+.no-float {
+    float: none !important;
+}
+
+/* line 34, ../sass/screen.scss */
+.no-border {
+    border: 0 !important;
+}
+
+/* line 35, ../sass/screen.scss */
+.no-bg {
+    background: none !important;
+}
+
+/* line 36, ../sass/screen.scss */
+.no-margin {
+    margin: 0 !important;
+}
+
+/* line 37, ../sass/screen.scss */
+.no-padding {
+    padding: 0 !important;
+}
+
+/* line 38, ../sass/screen.scss */
+.no-display {
+    display: none !important;
+}
+
+/* line 39, ../sass/screen.scss */
+.display {
+    display: block !important;
+}
+
+/* line 40, ../sass/screen.scss */
+.inline {
+    display: inline !important;
+}
+
+/* line 41, ../sass/screen.scss */
+.overflow {
+    overflow: hidden !important;
+}
+
+/* line 42, ../sass/screen.scss */
+.align-r {
+    text-align: right !important;
+}
+
+/* line 43, ../sass/screen.scss */
+.align-l {
+    text-align: left !important;
+}
+
+/* line 44, ../sass/screen.scss */
+.align-c {
+    text-align: center !important;
+}
+
+/* line 45, ../sass/screen.scss */
+.clear {
+    clear: both;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------wrapper--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 50, ../sass/screen.scss */
+.wrap {
+    position: relative;
+    overflow: hidden;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+/* line 56, ../sass/screen.scss */
+.inner {
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* line 61, ../sass/screen.scss */
+.main-page {
+    display: block;
+    margin-top: 147px;
+    text-align: center;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 70, ../sass/screen.scss */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #edeff1;
+}
+
+/* line 76, ../sass/screen.scss */
+.header .logo {
+    float: left;
+}
+
+/* line 78, ../sass/screen.scss */
+.header .logo a {
+    display: block;
+    width: 160px;
+    margin: 45px 0 45px 15px;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 88, ../sass/screen.scss */
+.menu {
+    float: right;
+    margin-top: 50px;
+}
+
+/* line 91, ../sass/screen.scss */
+.menu ul {
+    padding: 0;
+}
+
+/* line 93, ../sass/screen.scss */
+.menu ul li {
+    display: inline-block;
+}
+
+/* line 95, ../sass/screen.scss */
+.menu ul li a {
+    display: block;
+    height: 25px;
+    padding: 13px 20px;
+    font-size: 18px;
+    color: #31353e;
+}
+
+/* line 101, ../sass/screen.scss */
+.menu ul li a:hover {
+    background: #dd4b2b;
+    border-radius: 25px;
+    color: #fff;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*--------------------------------hero--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 115, ../sass/screen.scss */
+.hero {
+    background: url("../img/main.png") top center no-repeat #000000;
+    color: #fff;
+}
+
+/* line 118, ../sass/screen.scss */
+.hero .h-main {
+    margin-top: 465px;
+    font-size: 72px;
+    font-weight: 300;
+}
+
+/* line 123, ../sass/screen.scss */
+.hero .annotation {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* line 127, ../sass/screen.scss */
+.hero ul {
+    padding: 0;
+    margin: 35px auto;
+}
+
+/* line 130, ../sass/screen.scss */
+.hero ul li {
+    display: inline-block;
+    width: 367px;
+    vertical-align: top;
+    margin: 85px 15px 25px;
+}
+
+/* line 135, ../sass/screen.scss */
+.hero ul li .img-main {
+    display: block;
+    margin: 0 auto 10px;
+    border: 7px solid #fff;
+    border-radius: 50%;
+}
+
+/* line 142, ../sass/screen.scss */
+.hero ul li article p {
+    font-weight: 300;
+    padding: 10px;
+    line-height: 2;
+}
+
+/* line 150, ../sass/screen.scss */
+.hero .h-article-main {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+/* line 155, ../sass/screen.scss */
+.hero .btn {
+    display: block;
+    width: 180px;
+    margin: 0 auto 140px;
+    background: #fff;
+    font-size: 18px;
+    color: #dd4b2b;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+/* line 164, ../sass/screen.scss */
+.hero .btn:hover {
+    color: #fff;
+    background: #dd4b2b;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------------OUR NEWS--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 173, ../sass/screen.scss */
+.our-news {
+    background: #edeff1;
+}
+
+/* line 175, ../sass/screen.scss */
+.our-news .section-header {
+    margin: 75px auto 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* line 180, ../sass/screen.scss */
+.our-news ul {
+    margin: 75px 0 55px;
+    padding: 0;
+}
+
+/* line 183, ../sass/screen.scss */
+.our-news ul li {
+    display: inline-block;
+    width: 370px;
+    padding: 0 13px;
+    vertical-align: top;
+}
+
+/* line 188, ../sass/screen.scss */
+.our-news ul li .img-news {
+    display: block;
+    margin: 0 auto;
+}
+
+/* line 192, ../sass/screen.scss */
+.our-news ul li .h-article {
+    margin: 35px auto 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #31353e;
+}
+
+/* line 198, ../sass/screen.scss */
+.our-news ul li p {
+    padding: 0 15px;
+    line-height: 2;
+    color: #31353e;
+}
+
+/* line 203, ../sass/screen.scss */
+.our-news ul li .article-btn-more {
+    display: block;
+    width: 145px;
+    margin: 30px auto 50px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 27px;
+    background: #fff;
+    font-size: 15px;
+    color: #4e5159;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------NEWSLETTER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 221, ../sass/screen.scss */
+.newsletter {
+    background: url("../img/sec_bg.png") top center no-repeat #fff;
+    color: #fff;
+}
+
+/* line 224, ../sass/screen.scss */
+.newsletter h2 {
+    margin: 85px auto 0;
+    font-size: 30px;
+}
+
+/* line 228, ../sass/screen.scss */
+.newsletter p {
+    max-width: 533px;
+    margin: 10px auto 0;
+    font: 15px/24px "Roboto" sans-serif;
+}
+
+/* line 233, ../sass/screen.scss */
+.newsletter form {
+    position: relative;
+    padding: 30px 0;
+    margin-bottom: 85px;
+}
+
+/* line 237, ../sass/screen.scss */
+.newsletter form input {
+    height: 50px;
+    width: 280px;
+    padding: 0 210px 0 20px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    text-align: left;
+    opacity: 0.5;
+    vertical-align: top;
+}
+
+/* line 248, ../sass/screen.scss */
+.newsletter form input::-webkit-input-placeholder {
+    color: white;
+    opacity: 1.0;
+}
+
+/* line 249, ../sass/screen.scss */
+.newsletter form input:-moz-placeholder {
+    color: white;
+    opacity: 1.0;
+}
+
+/* line 250, ../sass/screen.scss */
+.newsletter form input:-ms-input-placeholder {
+    color: white;
+    opacity: 1.0;
+}
+
+/* line 251, ../sass/screen.scss */
+.newsletter form input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+/* line 252, ../sass/screen.scss */
+.newsletter form input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+/* line 253, ../sass/screen.scss */
+.newsletter form input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+/* line 255, ../sass/screen.scss */
+.newsletter form .singup {
+    position: absolute;
+    width: 210px;
+    padding: 15px 0 16px;
+    border-radius: 25px;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    color: #612316;
+    right: 340px;
+    vertical-align: top;
+    border: none;
+}
+
+/* line 267, ../sass/screen.scss */
+.newsletter form .singup:hover {
+    background: #dd4b2b;
+    color: #fff;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------PRODUCTS DETAILS-------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 278, ../sass/screen.scss */
+.products-details {
+    background: #fff;
+}
+
+/* line 280, ../sass/screen.scss */
+.products-details .inner {
+    overflow: visible;
+}
+
+/* line 282, ../sass/screen.scss */
+.products-details .inner ul {
+    padding: 0;
+    margin: 5px 0;
+}
+
+/* line 285, ../sass/screen.scss */
+.products-details .inner ul li {
+    margin: 65px 0;
+}
+
+/* line 287, ../sass/screen.scss */
+.products-details .inner ul li article {
+    position: relative;
+    width: 580px;
+    padding: 45px 15px 15px;
+    text-align: left;
+}
+
+/* line 292, ../sass/screen.scss */
+.products-details .inner ul li article h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* line 296, ../sass/screen.scss */
+.products-details .inner ul li article p {
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 0;
+    line-height: 2;
+}
+
+/* line 301, ../sass/screen.scss */
+.products-details .inner ul li article .btn-singup {
+    display: block;
+    width: 210px;
+    margin: 30px 0;
+    padding: 15px 0;
+    border-radius: 25px;
+    background: #4b4e73;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/* line 312, ../sass/screen.scss */
+.products-details .inner ul li article .btn-singup:hover {
+    background: #dd4b2b;
+}
+
+/* line 317, ../sass/screen.scss */
+.products-details .inner ul li .article-image {
+    position: relative;
+    display: block;
+    width: 590px;
+}
+
+/* line 323, ../sass/screen.scss */
+.products-details .inner ul li:nth-child(odd) article {
+    float: left;
+}
+
+/* line 328, ../sass/screen.scss */
+.products-details .inner ul li:nth-child(even) article {
+    float: right;
+}
+
+/* line 333, ../sass/screen.scss */
+.products-details .inner ul li:nth-child(odd) .article-image {
+    right: -30px;
+}
+
+/* line 338, ../sass/screen.scss */
+.products-details .inner ul li:nth-child(even) .article-image {
+    left: -30px;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 349, ../sass/screen.scss */
+.info {
+    background: #d75d0e;
+}
+
+/* line 351, ../sass/screen.scss */
+.info .url-block {
+    padding: 0;
+    margin: 90px 0 65px;
+}
+
+/* line 354, ../sass/screen.scss */
+.info .url-block li {
+    display: inline-block;
+    width: 367px;
+    font-family: 18px 'Roboto', sans-serif;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 2;
+    vertical-align: top;
+}
+
+/* line 362, ../sass/screen.scss */
+.info .url-block li a {
+    color: #fff;
+}
+
+/* line 364, ../sass/screen.scss */
+.info .url-block li a:hover {
+    text-decoration: underline;
+}
+
+/* line 372, ../sass/screen.scss */
+.copyrights {
+    background: url("../img/sec_bg.png") top center no-repeat #fff;
+    color: #fff;
+}
+
+/* line 375, ../sass/screen.scss */
+.copyrights p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 240px;
+}
+
+/* line 380, ../sass/screen.scss */
+.copyrights p:first-child {
+    margin: 90px 0 0;
+}
+
+/* line 383, ../sass/screen.scss */
+.copyrights p a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* line 387, ../sass/screen.scss */
+.copyrights p a:hover {
+    text-decoration: underline;
+}
