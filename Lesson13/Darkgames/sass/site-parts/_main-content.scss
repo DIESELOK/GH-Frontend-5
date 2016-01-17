@@ -1,0 +1,9 @@
+@import "main-content-elements/left-aside";
+@import "main-content-elements/main-slider";
+.main-content{
+  overflow: hidden;
+  .container{
+    padding-top:5px;
+    background-color: #1f1f1f;
+  }
+}

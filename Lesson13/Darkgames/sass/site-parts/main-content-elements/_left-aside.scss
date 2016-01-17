@@ -1,0 +1,57 @@
+.left-aside{
+  @media screen and (min-width: 773px){
+    float:left;
+    width: 208px;
+  }
+  overflow: hidden;
+  .aside-navigation, .type-games-navigation, .reclame{
+    background: #1a1a1a;
+    @media screen and (min-width: 430px)and (max-width: 773px) {
+    @include span(6 of 12);
+  }
+    h2{
+      padding: 10px;
+      background-image: linear-gradient(to top, #844818 0%, #f28804 100%);
+      border: 1px solid #6a3700;
+      text-transform: uppercase;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.33);
+      color: black;
+      font-size: 17px;
+      font-weight: 700;
+      .fa{
+        float: right;
+        margin-right: 2px;
+      }
+    }
+    ul{
+      padding: 5px 5px 15px 5px;
+      li {
+        margin-top: 5px;
+        padding: 2px 0 10px 15px;
+        background: url("../images/arrow-for-list.png") no-repeat 0 4px;
+        border-bottom: 3px dotted #0f0f0f;
+        a {
+          color: white;
+          font-family: Arial;
+          font-size: 12px;
+          transition: 0.5s;
+          &:hover{
+            color: #9e6701;
+          }
+        }
+      }
+    }
+  }
+  .type-games-navigation{
+    @media screen and (min-width: 430px) and (max-width: 773px) {
+      @include last;
+    }
+  }
+  .reclame{
+    img{
+      display:block;
+      margin: 0 auto;
+      padding:7px;
+    }
+  }
+}

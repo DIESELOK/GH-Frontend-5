@@ -1,0 +1,65 @@
+.chart-lists{
+  padding-bottom: 10px;
+  overflow: hidden;
+  background: transparent;
+  .news-public-article, .best-public-article, .topdownloads-article{
+    display:inline-block;
+    width:100%;
+    margin:0 auto;
+    padding: 10px;
+    border:1px solid #303030;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    @media screen and (min-width: 680px) {
+      @include span(6 of 12);
+      margin-bottom: 15px;
+    }
+    @media screen and (min-width: 1024px) {
+      @include span(4 of 12);
+    }
+    h2{
+      display:flex;
+      max-height: 20px;
+      align-items: center;
+      margin-bottom: 5px;
+      text-shadow: 0 0 1.4px rgba(0, 3, 1, 0.4);
+      color: #636363;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+    .news-public {
+      padding:10px 10px 2px;
+      box-shadow: inset 0 0 16px rgba(255, 255, 255, 0.1);
+      background-image: linear-gradient(to left, #58391d 0%, #58391d 1%, #21170e 4%, #111 100%, #131313 100%);
+      li {
+        margin-bottom: 8px;
+        padding-left: 15px;
+        background: url("../images/arrow-for-list.png") no-repeat 0 4px;
+        a {
+          color: white;
+          font-family: Arial;
+          font-size: 11px;
+          transition: 0.5s;
+          &:hover{
+            color: #9e6701;
+          }
+        }
+      }
+    }
+  }
+  .topdownloads-article{
+    .news-public {
+      box-shadow:none;
+      background-image:none;
+    }
+  }
+  .best-public-article {
+    @media screen and (min-width: 680px) and (max-width:1024px) {
+      @include last;
+    }
+  }
+  .topdownloads-article {
+    @media screen and (min-width: 1024px) {
+      @include last;
+    }
+  }
+}

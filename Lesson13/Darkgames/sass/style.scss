@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Myriad Pro Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Condensed'), url('../fonts/MYRIADPRO-COND.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Myriad Pro Bold Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold Condensed'), url('../fonts/MYRIADPRO-BOLDCOND.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Myriad Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff');
+}
+@font-face {
+  font-family: 'Arial regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Arial regular'), url('../fonts/arial-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Arial Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Arial Bold'), url('../fonts/arial-bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'aglettericacondensedc';
+  src: url('../fonts/aglettericacondensedc-webfont.eot');
+  src: url('../fonts/aglettericacondensedc-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/aglettericacondensedc-webfont.woff2') format('woff2'),
+  url('../fonts/aglettericacondensedc-webfont.woff') format('woff'),
+  url('../fonts/aglettericacondensedc-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@import 'compass';
+@import "grids";
+@import "reset";
+@import "layout/wrapper";
+@import "layout/header";
+@import "site-parts/hero";
+@import "site-parts/search-login-panel";
+@import "site-parts/chart-lists";
+@import "site-parts/main-content";
+
+@include border-box-sizing();
+.container{
+  @include container();
+  padding:0 5px;
+  overflow: hidden;
+}
+img{
+  max-width:100%;
+  height:auto;
+}
