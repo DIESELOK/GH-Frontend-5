@@ -451,21 +451,22 @@ header .container .main-navigation li a:hover {
   .left-aside {
     float: left;
     width: 208px;
+    margin-right: 5px;
   }
 }
-/* line 7, ../sass/site-parts/main-content-elements/_left-aside.scss */
+/* line 8, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .aside-navigation, .left-aside .type-games-navigation, .left-aside .reclame {
   background: #1a1a1a;
 }
 @media screen and (min-width: 430px) and (max-width: 773px) {
-  /* line 7, ../sass/site-parts/main-content-elements/_left-aside.scss */
+  /* line 8, ../sass/site-parts/main-content-elements/_left-aside.scss */
   .left-aside .aside-navigation, .left-aside .type-games-navigation, .left-aside .reclame {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-/* line 12, ../sass/site-parts/main-content-elements/_left-aside.scss */
+/* line 13, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .aside-navigation h2, .left-aside .type-games-navigation h2, .left-aside .reclame h2 {
   padding: 10px;
   background-image: linear-gradient(to top, #844818 0%, #f28804 100%);
@@ -476,41 +477,41 @@ header .container .main-navigation li a:hover {
   font-size: 17px;
   font-weight: 700;
 }
-/* line 21, ../sass/site-parts/main-content-elements/_left-aside.scss */
+/* line 22, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .aside-navigation h2 .fa, .left-aside .type-games-navigation h2 .fa, .left-aside .reclame h2 .fa {
   float: right;
   margin-right: 2px;
 }
-/* line 26, ../sass/site-parts/main-content-elements/_left-aside.scss */
+/* line 27, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .aside-navigation ul, .left-aside .type-games-navigation ul, .left-aside .reclame ul {
   padding: 5px 5px 15px 5px;
 }
-/* line 28, ../sass/site-parts/main-content-elements/_left-aside.scss */
+/* line 29, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .aside-navigation ul li, .left-aside .type-games-navigation ul li, .left-aside .reclame ul li {
   margin-top: 5px;
   padding: 2px 0 10px 15px;
   background: url("../images/arrow-for-list.png") no-repeat 0 4px;
   border-bottom: 3px dotted #0f0f0f;
 }
-/* line 33, ../sass/site-parts/main-content-elements/_left-aside.scss */
+/* line 34, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .aside-navigation ul li a, .left-aside .type-games-navigation ul li a, .left-aside .reclame ul li a {
   color: white;
   font-family: Arial;
   font-size: 12px;
   transition: 0.5s;
 }
-/* line 38, ../sass/site-parts/main-content-elements/_left-aside.scss */
+/* line 39, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .aside-navigation ul li a:hover, .left-aside .type-games-navigation ul li a:hover, .left-aside .reclame ul li a:hover {
   color: #9e6701;
 }
 @media screen and (min-width: 430px) and (max-width: 773px) {
-  /* line 45, ../sass/site-parts/main-content-elements/_left-aside.scss */
+  /* line 46, ../sass/site-parts/main-content-elements/_left-aside.scss */
   .left-aside .type-games-navigation {
     float: right;
     margin-right: 0;
   }
 }
-/* line 51, ../sass/site-parts/main-content-elements/_left-aside.scss */
+/* line 52, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .reclame img {
   display: block;
   margin: 0 auto;
@@ -535,7 +536,7 @@ header .container .main-navigation li a:hover {
 /* line 11, ../sass/site-parts/main-content-elements/_main-slider.scss */
 .main-slider h3 {
   position: absolute;
-  top: 0px;
+  top: 16px;
   margin: 0 auto;
   z-index: 100;
   width: 100%;
@@ -556,7 +557,7 @@ header .container .main-navigation li a:hover {
 /* line 32, ../sass/site-parts/main-content-elements/_main-slider.scss */
 .main-slider #carousel {
   position: absolute;
-  bottom: 3px;
+  top: 197px;
   right: 0;
   left: 0;
   height: 61px;
@@ -609,12 +610,97 @@ header .container .main-navigation li a:hover {
   height: 33px;
   background: url("../images/arrow-slider-next.png") no-repeat;
 }
+/* line 84, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider #small-slider .flexslider {
+  position: relative;
+  max-width: 552px;
+  max-height: 91px;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+  box-shadow: 0 5px 5px black;
+}
+/* line 92, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider #small-slider .flexslider .slides li {
+  display: inline-block !important;
+  margin-right: 0 !important;
+  width: 76px !important;
+}
+/* line 96, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider #small-slider .flexslider .slides li:hover {
+  opacity: 0.5;
+}
+/* line 102, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider #small-slider .flex-nav-prev {
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 2px;
+}
+/* line 107, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider #small-slider .flex-nav-prev a {
+  display: block;
+  width: 51px;
+  height: 51px;
+  background: url("../images/arrow-left-smallslider.png") no-repeat;
+}
+/* line 112, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider #small-slider .flex-nav-prev a:hover {
+  background: url("../images/arrow-left-smallsliderhover.png") no-repeat;
+}
+/* line 117, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider #small-slider .flex-nav-next {
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  right: 2px;
+}
+/* line 122, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider #small-slider .flex-nav-next a {
+  display: block;
+  width: 51px;
+  height: 51px;
+  background: url("../images/arrow-right-smallslider.png") no-repeat;
+}
+/* line 127, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider #small-slider .flex-nav-next a:hover {
+  background: url("../images/arrow-right-smallsliderhover.png") no-repeat;
+}
+/* line 132, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider #small-slider:before {
+  content: "";
+  display: block;
+  height: 17px;
+  background: black;
+}
+/* line 139, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider:before {
+  content: "";
+  display: block;
+  height: 17px;
+  background: black;
+}
 
-/* line 3, ../sass/site-parts/_main-content.scss */
+/* line 1, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside {
+  float: right;
+  width: 208px;
+  margin-left: 5px;
+}
+/* line 5, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .gallery {
+  background: #1a1a1a;
+}
+/* line 7, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .gallery h2 {
+  height: 40px;
+  background-image: url("../images/backgroung-right-asidetitle.png");
+}
+
+/* line 4, ../sass/site-parts/_main-content.scss */
 .main-content {
   overflow: hidden;
 }
-/* line 5, ../sass/site-parts/_main-content.scss */
+/* line 6, ../sass/site-parts/_main-content.scss */
 .main-content .container {
   padding-top: 5px;
   background-color: #1f1f1f;

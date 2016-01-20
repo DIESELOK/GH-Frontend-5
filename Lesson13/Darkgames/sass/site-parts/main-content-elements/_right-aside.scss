@@ -1,0 +1,12 @@
+.right-aside{
+  float:right;
+  width: 208px;
+  margin-left: 5px;
+  .gallery{
+    background: #1a1a1a;
+    h2{
+      height:40px;
+      background-image: url("../images/backgroung-right-asidetitle.png");
+    }
+  }
+}
