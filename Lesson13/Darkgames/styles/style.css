@@ -446,27 +446,33 @@ header .container .main-navigation li a:hover {
 .left-aside {
   overflow: hidden;
 }
-@media screen and (min-width: 773px) {
+@media screen and (min-width: 835px) {
   /* line 1, ../sass/site-parts/main-content-elements/_left-aside.scss */
   .left-aside {
     float: left;
-    width: 208px;
+    width: 260px;
     margin-right: 5px;
   }
 }
-/* line 8, ../sass/site-parts/main-content-elements/_left-aside.scss */
+@media screen and (min-width: 1145px) {
+  /* line 1, ../sass/site-parts/main-content-elements/_left-aside.scss */
+  .left-aside {
+    margin-right: 10px;
+  }
+}
+/* line 11, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .aside-navigation, .left-aside .type-games-navigation, .left-aside .reclame {
   background: #1a1a1a;
 }
-@media screen and (min-width: 430px) and (max-width: 773px) {
-  /* line 8, ../sass/site-parts/main-content-elements/_left-aside.scss */
+@media screen and (min-width: 430px) and (max-width: 834px) {
+  /* line 11, ../sass/site-parts/main-content-elements/_left-aside.scss */
   .left-aside .aside-navigation, .left-aside .type-games-navigation, .left-aside .reclame {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-/* line 13, ../sass/site-parts/main-content-elements/_left-aside.scss */
+/* line 16, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .aside-navigation h2, .left-aside .type-games-navigation h2, .left-aside .reclame h2 {
   padding: 10px;
   background-image: linear-gradient(to top, #844818 0%, #f28804 100%);
@@ -477,41 +483,41 @@ header .container .main-navigation li a:hover {
   font-size: 17px;
   font-weight: 700;
 }
-/* line 22, ../sass/site-parts/main-content-elements/_left-aside.scss */
+/* line 25, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .aside-navigation h2 .fa, .left-aside .type-games-navigation h2 .fa, .left-aside .reclame h2 .fa {
   float: right;
   margin-right: 2px;
 }
-/* line 27, ../sass/site-parts/main-content-elements/_left-aside.scss */
+/* line 30, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .aside-navigation ul, .left-aside .type-games-navigation ul, .left-aside .reclame ul {
   padding: 5px 5px 15px 5px;
 }
-/* line 29, ../sass/site-parts/main-content-elements/_left-aside.scss */
+/* line 32, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .aside-navigation ul li, .left-aside .type-games-navigation ul li, .left-aside .reclame ul li {
   margin-top: 5px;
   padding: 2px 0 10px 15px;
   background: url("../images/arrow-for-list.png") no-repeat 0 4px;
   border-bottom: 3px dotted #0f0f0f;
 }
-/* line 34, ../sass/site-parts/main-content-elements/_left-aside.scss */
+/* line 37, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .aside-navigation ul li a, .left-aside .type-games-navigation ul li a, .left-aside .reclame ul li a {
   color: white;
   font-family: Arial;
   font-size: 12px;
   transition: 0.5s;
 }
-/* line 39, ../sass/site-parts/main-content-elements/_left-aside.scss */
+/* line 42, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .aside-navigation ul li a:hover, .left-aside .type-games-navigation ul li a:hover, .left-aside .reclame ul li a:hover {
   color: #9e6701;
 }
-@media screen and (min-width: 430px) and (max-width: 773px) {
-  /* line 46, ../sass/site-parts/main-content-elements/_left-aside.scss */
+@media screen and (min-width: 430px) and (max-width: 834px) {
+  /* line 49, ../sass/site-parts/main-content-elements/_left-aside.scss */
   .left-aside .type-games-navigation {
     float: right;
     margin-right: 0;
   }
 }
-/* line 52, ../sass/site-parts/main-content-elements/_left-aside.scss */
+/* line 55, ../sass/site-parts/main-content-elements/_left-aside.scss */
 .left-aside .reclame img {
   display: block;
   margin: 0 auto;
@@ -525,10 +531,10 @@ header .container .main-navigation li a:hover {
   max-width: 552px;
   margin: 0 auto;
 }
-@media screen and (min-width: 773px) {
+@media screen and (min-width: 835px) {
   /* line 1, ../sass/site-parts/main-content-elements/_main-slider.scss */
   .main-slider {
-    margin-left: 2px;
+    margin-left: 8px;
     clear: right;
     float: left;
   }
@@ -682,18 +688,218 @@ header .container .main-navigation li a:hover {
 
 /* line 1, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside {
-  float: right;
-  width: 208px;
-  margin-left: 5px;
+  overflow: hidden;
+  display: block;
 }
-/* line 5, ../sass/site-parts/main-content-elements/_right-aside.scss */
+@media screen and (max-width: 1099px) {
+  /* line 1, ../sass/site-parts/main-content-elements/_right-aside.scss */
+  .right-aside {
+    clear: both;
+  }
+}
+@media screen and (min-width: 1100px) {
+  /* line 1, ../sass/site-parts/main-content-elements/_right-aside.scss */
+  .right-aside {
+    float: right;
+    width: 260px;
+    margin-left: 5px;
+  }
+}
+@media screen and (min-width: 430px) and (max-width: 834px) {
+  /* line 12, ../sass/site-parts/main-content-elements/_right-aside.scss */
+  .right-aside .gallery, .right-aside .video, .right-aside .reclame, .right-aside .interview {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+@media screen and (min-width: 835px) and (max-width: 1099px) {
+  /* line 12, ../sass/site-parts/main-content-elements/_right-aside.scss */
+  .right-aside .gallery, .right-aside .video, .right-aside .reclame, .right-aside .interview {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+@media screen and (min-width: 430px) and (max-width: 834px) {
+  /* line 20, ../sass/site-parts/main-content-elements/_right-aside.scss */
+  .right-aside .video, .right-aside .interview {
+    float: right;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 835px) and (max-width: 1099px) {
+  /* line 25, ../sass/site-parts/main-content-elements/_right-aside.scss */
+  .right-aside .reclame {
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 30, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside h2 {
+  height: 40px;
+  padding: 11px;
+  background: url("../images/backgroung-right-asidetitle.png") no-repeat center;
+  background-size: cover;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.33);
+  color: #e58106;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+/* line 42, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .btn-watch {
+  float: right;
+  width: 76px;
+  height: 21px;
+  margin-right: 45px;
+  padding: 4px;
+  background-image: linear-gradient(to top, #864918 0%, #f28804 100%);
+  font-family: Arial;
+  font-size: 11px;
+  color: #331c04;
+  text-align: center;
+  transition: 0.5s;
+}
+/* line 54, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .btn-watch:hover {
+  opacity: 0.5;
+}
+/* line 58, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .gallery {
+  overflow: hidden;
+  min-height: 250px;
+  margin-bottom: 25px;
   background: #1a1a1a;
 }
-/* line 7, ../sass/site-parts/main-content-elements/_right-aside.scss */
-.right-aside .gallery h2 {
-  height: 40px;
-  background-image: url("../images/backgroung-right-asidetitle.png");
+/* line 63, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .gallery ul {
+  padding: 10px 18px;
+  text-align: center;
+}
+/* line 66, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .gallery ul li {
+  display: inline-block;
+  margin: 0 15px 5px 0;
+  box-shadow: 0 0 0 1px rgba(240, 135, 4, 0.47);
+  line-height: 0;
+}
+/* line 71, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .gallery ul li a {
+  line-height: 0;
+}
+/* line 74, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .gallery ul li:nth-of-type(2), .right-aside .gallery ul li:nth-of-type(4) {
+  margin-right: 0;
+}
+/* line 80, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .video {
+  overflow: hidden;
+  min-height: 200px;
+  margin-bottom: 5px;
+  background: #1a1a1a;
+}
+/* line 85, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .video ul {
+  padding: 10px 18px;
+  text-align: center;
+}
+/* line 88, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .video ul li {
+  display: inline-block;
+}
+/* line 90, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .video ul li:first-child {
+  margin-right: 15px;
+}
+/* line 93, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .video ul li figure {
+  max-width: 80px;
+  margin: 0;
+  text-align: center;
+}
+/* line 97, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .video ul li figure img {
+  box-shadow: 0 0 0 1px rgba(240, 135, 4, 0.47);
+}
+/* line 100, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .video ul li figure a {
+  color: #f08704;
+  font-family: Arial;
+  font-size: 9px;
+  transition: 0.5s;
+}
+/* line 105, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .video ul li figure a:hover {
+  opacity: 0.5;
+}
+/* line 113, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .reclame {
+  overflow: hidden;
+  min-height: 195px;
+  margin-bottom: 5px;
+  background: #1a1a1a;
+  text-align: center;
+}
+/* line 119, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .reclame h2 {
+  margin-bottom: 5px;
+}
+/* line 122, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .reclame img {
+  margin-bottom: 20px;
+}
+/* line 126, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .interview {
+  overflow: hidden;
+  background: #1a1a1a;
+}
+/* line 129, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .interview form {
+  padding: 10px;
+}
+/* line 131, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .interview form p {
+  margin-bottom: 10px;
+  color: #fb9c0b;
+  font-family: Arial;
+  font-size: 11px;
+}
+/* line 137, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .interview form .game-choice-list {
+  margin-bottom: 15px;
+}
+/* line 139, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .interview form .game-choice-list li {
+  margin-bottom: 5px;
+  color: white;
+  font-family: Arial;
+  font-size: 11px;
+}
+/* line 147, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .interview form .btn-list li {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+/* line 150, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .interview form .btn-list li input {
+  width: 78px;
+  height: 21px;
+  background-image: linear-gradient(to top, #894b17 0%, #ef8605 100%);
+  box-shadow: 0 0 0 1px rgba(235, 132, 5, 0.55);
+  text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.21);
+  color: black;
+  font-family: Arial;
+  font-size: 12px;
+  transition: 0.5s;
+}
+/* line 161, ../sass/site-parts/main-content-elements/_right-aside.scss */
+.right-aside .interview form .btn-list li .result-btn {
+  font-size: 11px;
+  background-image: linear-gradient(to top, #000000 0%, #1f1f1f 100%);
+  box-shadow: 0 0 0 1px rgba(59, 59, 59, 0.75);
+  color: white;
 }
 
 /* line 4, ../sass/site-parts/_main-content.scss */

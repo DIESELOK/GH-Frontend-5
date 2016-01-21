@@ -1,13 +1,16 @@
 .left-aside{
-  @media screen and (min-width: 773px){
+  @media screen and (min-width: 835px){
     float:left;
-    width: 208px;
+    width: 260px;
     margin-right: 5px;
+  }
+  @media screen and (min-width: 1145px){
+    margin-right: 10px;
   }
   overflow: hidden;
   .aside-navigation, .type-games-navigation, .reclame{
     background: #1a1a1a;
-    @media screen and (min-width: 430px)and (max-width: 773px) {
+    @media screen and (min-width: 430px)and (max-width: 834px) {
     @include span(6 of 12);
   }
     h2{
@@ -44,7 +47,7 @@
     }
   }
   .type-games-navigation{
-    @media screen and (min-width: 430px) and (max-width: 773px) {
+    @media screen and (min-width: 430px) and (max-width: 834px) {
       @include last;
     }
   }
