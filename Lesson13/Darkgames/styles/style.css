@@ -685,6 +685,213 @@ header .container .main-navigation li a:hover {
   height: 17px;
   background: black;
 }
+/* line 146, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .news-sources {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 37px;
+  box-shadow: inset 0 1px 3px black;
+  background-color: #fff;
+}
+/* line 153, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .news-sources li {
+  display: inline-block;
+  color: black;
+  font-family: Arial;
+  font-size: 8px;
+}
+@media screen and (min-width: 340px) {
+  /* line 153, ../sass/site-parts/main-content-elements/_main-slider.scss */
+  .main-slider article .news-sources li {
+    font-size: 12px;
+  }
+}
+/* line 161, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .news-sources li img {
+  margin-right: 5px;
+}
+/* line 164, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .news-sources li a {
+  font-family: Arial;
+  font-size: 12px;
+}
+/* line 167, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .news-sources li ahover {
+  color: #b9660f;
+  text-decoration: underline;
+}
+/* line 173, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .news-sources .news-line-head {
+  height: 15px;
+  background: url(../images/news-sources-bg.png);
+  background-size: cover;
+}
+@media screen and (min-width: 564px) {
+  /* line 173, ../sass/site-parts/main-content-elements/_main-slider.scss */
+  .main-slider article .news-sources .news-line-head {
+    display: inline-block;
+    width: 212px;
+    margin-left: 10px;
+  }
+}
+/* line 184, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .titlegame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  height: 33px;
+  background-image: linear-gradient(to top, #0f0f0f 0%, #0f0f0f 100%, #1a1a1a 100%);
+  color: #ef8605;
+  text-transform: uppercase;
+  font-family: Arial;
+  font-size: 11px;
+}
+/* line 195, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .titlegame div {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+/* line 199, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .titlegame div a {
+  color: #a05c0c;
+  transition: 0.5s;
+}
+/* line 202, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .titlegame div a:hover {
+  opacity: 0.5;
+}
+/* line 208, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game {
+  overflow: hidden;
+  padding: 0 10px;
+  background: #fff;
+}
+/* line 213, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .article-info li {
+  display: inline-block;
+  margin-right: 15px;
+  font-family: Arial;
+  font-size: 9px;
+}
+/* line 218, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .article-info li:last-child {
+  margin-right: 0;
+}
+/* line 223, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .news-line {
+  display: block;
+  height: 7px;
+  margin-bottom: 10px;
+  background: url(../images/news-sources-bg.png);
+}
+/* line 229, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .post-game-img {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+/* line 233, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .post-game-description {
+  margin-bottom: 10px;
+  color: #7d7d7d;
+  font-family: Arial;
+  font-size: 11px;
+  line-height: 17px;
+}
+/* line 239, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .post-game-description span {
+  color: #2f2f2f;
+  font-weight: 700;
+}
+/* line 244, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .under-postline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+/* line 249, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .under-postline .line {
+  display: block;
+  width: 340px;
+  height: 15px;
+  background: url(../images/news-sources-bg.png);
+}
+/* line 255, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .under-postline .comments-count {
+  color: black;
+  font-family: Arial;
+  font-size: 11px;
+}
+/* line 260, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .under-postline a {
+  display: inline-block;
+  padding: 5px;
+  width: 73px;
+  height: 20px;
+  background-image: linear-gradient(to top, #894b17 0%, #ef8605 100%);
+  box-shadow: 0 0 0 1px rgba(235, 132, 5, 0.57);
+  color: black;
+  font-family: Arial;
+  font-size: 11px;
+  text-align: center;
+  transition: 0.5s;
+}
+/* line 272, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .under-postline a:hover {
+  opacity: 0.5;
+}
+/* line 277, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+/* line 282, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .page-nav .link-back, .main-slider article .post-game .page-nav .link-forward {
+  display: inline-block;
+  margin: 0 5px;
+}
+/* line 287, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .page-list {
+  display: flex;
+  align-items: center;
+  max-width: 205px;
+  height: 32px;
+  padding: 12px 28px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.21);
+  background-color: black;
+  text-align: center;
+}
+/* line 297, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .page-list li {
+  display: inline-block;
+  letter-spacing: 2px;
+}
+/* line 300, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .page-list li a {
+  font-family: Arial;
+  font-size: 13px;
+  color: #ef8605;
+}
+/* line 304, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .post-game .page-list li a:focus {
+  color: white;
+}
+/* line 311, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .banner {
+  overflow: hidden;
+  border: 1px solid black;
+  box-shadow: 1px 1.7px 2px rgba(0, 0, 0, 0.36);
+}
+/* line 315, ../sass/site-parts/main-content-elements/_main-slider.scss */
+.main-slider article .banner .banner-img {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75);
+  margin: 10px;
+}
 
 /* line 1, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside {
