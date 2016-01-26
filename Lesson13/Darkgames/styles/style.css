@@ -897,6 +897,7 @@ header .container .main-navigation li a:hover {
 .right-aside {
   overflow: hidden;
   display: block;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 1099px) {
   /* line 1, ../sass/site-parts/main-content-elements/_right-aside.scss */
@@ -913,7 +914,7 @@ header .container .main-navigation li a:hover {
   }
 }
 @media screen and (min-width: 430px) and (max-width: 834px) {
-  /* line 12, ../sass/site-parts/main-content-elements/_right-aside.scss */
+  /* line 13, ../sass/site-parts/main-content-elements/_right-aside.scss */
   .right-aside .gallery, .right-aside .video, .right-aside .reclame, .right-aside .interview {
     width: 49.15254%;
     float: left;
@@ -921,7 +922,7 @@ header .container .main-navigation li a:hover {
   }
 }
 @media screen and (min-width: 835px) and (max-width: 1099px) {
-  /* line 12, ../sass/site-parts/main-content-elements/_right-aside.scss */
+  /* line 13, ../sass/site-parts/main-content-elements/_right-aside.scss */
   .right-aside .gallery, .right-aside .video, .right-aside .reclame, .right-aside .interview {
     width: 32.20339%;
     float: left;
@@ -929,20 +930,20 @@ header .container .main-navigation li a:hover {
   }
 }
 @media screen and (min-width: 430px) and (max-width: 834px) {
-  /* line 20, ../sass/site-parts/main-content-elements/_right-aside.scss */
+  /* line 21, ../sass/site-parts/main-content-elements/_right-aside.scss */
   .right-aside .video, .right-aside .interview {
     float: right;
     margin-right: 0;
   }
 }
 @media screen and (min-width: 835px) and (max-width: 1099px) {
-  /* line 25, ../sass/site-parts/main-content-elements/_right-aside.scss */
+  /* line 26, ../sass/site-parts/main-content-elements/_right-aside.scss */
   .right-aside .reclame {
     float: right;
     margin-right: 0;
   }
 }
-/* line 30, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 31, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside h2 {
   height: 40px;
   padding: 11px;
@@ -955,7 +956,7 @@ header .container .main-navigation li a:hover {
   font-weight: 700;
   text-align: center;
 }
-/* line 42, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 43, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .btn-watch {
   float: right;
   width: 76px;
@@ -969,79 +970,79 @@ header .container .main-navigation li a:hover {
   text-align: center;
   transition: 0.5s;
 }
-/* line 54, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 55, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .btn-watch:hover {
   opacity: 0.5;
 }
-/* line 58, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 59, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .gallery {
   overflow: hidden;
   min-height: 250px;
   margin-bottom: 25px;
   background: #1a1a1a;
 }
-/* line 63, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 64, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .gallery ul {
   padding: 10px 18px;
   text-align: center;
 }
-/* line 66, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 67, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .gallery ul li {
   display: inline-block;
   margin: 0 15px 5px 0;
   box-shadow: 0 0 0 1px rgba(240, 135, 4, 0.47);
   line-height: 0;
 }
-/* line 71, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 72, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .gallery ul li a {
   line-height: 0;
 }
-/* line 74, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 75, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .gallery ul li:nth-of-type(2), .right-aside .gallery ul li:nth-of-type(4) {
   margin-right: 0;
 }
-/* line 80, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 81, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .video {
   overflow: hidden;
   min-height: 200px;
   margin-bottom: 5px;
   background: #1a1a1a;
 }
-/* line 85, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 86, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .video ul {
   padding: 10px 18px;
   text-align: center;
 }
-/* line 88, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 89, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .video ul li {
   display: inline-block;
 }
-/* line 90, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 91, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .video ul li:first-child {
   margin-right: 15px;
 }
-/* line 93, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 94, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .video ul li figure {
   max-width: 80px;
   margin: 0;
   text-align: center;
 }
-/* line 97, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 98, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .video ul li figure img {
   box-shadow: 0 0 0 1px rgba(240, 135, 4, 0.47);
 }
-/* line 100, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 101, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .video ul li figure a {
   color: #f08704;
   font-family: Arial;
   font-size: 9px;
   transition: 0.5s;
 }
-/* line 105, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 106, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .video ul li figure a:hover {
   opacity: 0.5;
 }
-/* line 113, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 114, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .reclame {
   overflow: hidden;
   min-height: 195px;
@@ -1049,47 +1050,47 @@ header .container .main-navigation li a:hover {
   background: #1a1a1a;
   text-align: center;
 }
-/* line 119, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 120, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .reclame h2 {
   margin-bottom: 5px;
 }
-/* line 122, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 123, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .reclame img {
   margin-bottom: 20px;
 }
-/* line 126, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 127, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .interview {
   overflow: hidden;
   background: #1a1a1a;
 }
-/* line 129, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 130, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .interview form {
   padding: 10px;
 }
-/* line 131, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 132, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .interview form p {
   margin-bottom: 10px;
   color: #fb9c0b;
   font-family: Arial;
   font-size: 11px;
 }
-/* line 137, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 138, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .interview form .game-choice-list {
   margin-bottom: 15px;
 }
-/* line 139, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 140, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .interview form .game-choice-list li {
   margin-bottom: 5px;
   color: white;
   font-family: Arial;
   font-size: 11px;
 }
-/* line 147, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 148, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .interview form .btn-list li {
   display: inline-block;
   margin-bottom: 30px;
 }
-/* line 150, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 151, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .interview form .btn-list li input {
   width: 78px;
   height: 21px;
@@ -1101,7 +1102,7 @@ header .container .main-navigation li a:hover {
   font-size: 12px;
   transition: 0.5s;
 }
-/* line 161, ../sass/site-parts/main-content-elements/_right-aside.scss */
+/* line 162, ../sass/site-parts/main-content-elements/_right-aside.scss */
 .right-aside .interview form .btn-list li .result-btn {
   font-size: 11px;
   background-image: linear-gradient(to top, #000000 0%, #1f1f1f 100%);
@@ -1119,6 +1120,117 @@ header .container .main-navigation li a:hover {
   background-color: #1f1f1f;
 }
 
+/* line 1, ../sass/layout/_footer.scss */
+footer {
+  overflow: hidden;
+  text-align: center;
+}
+/* line 4, ../sass/layout/_footer.scss */
+footer .container {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0c0c0c;
+  box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.1);
+}
+/* line 11, ../sass/layout/_footer.scss */
+footer .container h2 {
+  display: inline-block;
+  margin: 10px;
+}
+/* line 15, ../sass/layout/_footer.scss */
+footer .container .footer-description {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 20px;
+  max-width: 440px;
+  text-align: left;
+  font-family: Arial;
+}
+/* line 22, ../sass/layout/_footer.scss */
+footer .container .footer-description:before {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  content: "";
+  background-color: #121212;
+  background-image: linear-gradient(to top, #121212 0%, #333333 50%, #121212 100%);
+  box-shadow: 0 0 1.4px 1.6px rgba(0, 3, 1, 0.4);
+}
+/* line 34, ../sass/layout/_footer.scss */
+footer .container .footer-description:after {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  content: "";
+  background-color: #121212;
+  background-image: linear-gradient(to top, #121212 0%, #333333 50%, #121212 100%);
+  box-shadow: 0 0 1.4px 1.6px rgba(0, 3, 1, 0.4);
+}
+/* line 47, ../sass/layout/_footer.scss */
+footer .container .footer-description .copyright-articel {
+  margin-bottom: 8px;
+  color: white;
+  font-size: 12px;
+}
+/* line 52, ../sass/layout/_footer.scss */
+footer .container .footer-description .description {
+  margin-bottom: 8px;
+  color: #bfbfbf;
+  font-size: 11px;
+}
+/* line 57, ../sass/layout/_footer.scss */
+footer .container .footer-description span {
+  float: right;
+  color: #484848;
+  font-family: 'Myriad Pro Bold Condensed';
+  font-size: 15px;
+  font-weight: 700;
+}
+/* line 65, ../sass/layout/_footer.scss */
+footer .container .link-list {
+  max-width: 175px;
+  margin-left: 10px;
+  display: inline-block;
+}
+/* line 69, ../sass/layout/_footer.scss */
+footer .container .link-list li {
+  display: inline-block;
+}
+/* line 72, ../sass/layout/_footer.scss */
+footer .container .link-list a {
+  display: inline-block;
+  width: 84px;
+  height: 29px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+/* line 79, ../sass/layout/_footer.scss */
+footer .container .link-top {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  margin: 25px 0 0 10px;
+  color: #494949;
+  font-family: 'Myriad Pro Condensed';
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 89, ../sass/layout/_footer.scss */
+footer .container .link-top img {
+  position: absolute;
+  bottom: 15px;
+  left: 2px;
+}
+
 /* line 21, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -1126,7 +1238,7 @@ header .container .main-navigation li a:hover {
   box-sizing: border-box;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .container {
   max-width: 1120px;
   margin-left: auto;
@@ -1141,7 +1253,7 @@ header .container .main-navigation li a:hover {
   clear: both;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 img {
   max-width: 100%;
   height: auto;
