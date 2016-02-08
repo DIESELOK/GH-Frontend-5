@@ -1,0 +1,49 @@
+#principles {
+  overflow: hidden;
+  img {
+    float: left;
+    margin: 200px 0 0;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+  }
+  article {
+    float: left;
+    max-width: 500px;
+    margin: 230px 0 300px 40px;
+    h2 {
+      margin-bottom: 15px;
+      color: #222;
+      font-size: 60px;
+      font-weight: 100;
+    }
+    span {
+      display:block;
+      margin-bottom: 40px;
+      color: #f7cc4b;
+      font-size: 20px;
+      font-weight: 300;
+    }
+    p {
+      margin-bottom: 40px;
+      color: #b1b1b1;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    a {
+      display: block;
+      width: 170px;
+      height: 40px;
+      margin-bottom: 10px;
+      border: 2px solid #f7cc4b;
+      border-radius: 1px;
+      padding: 10px 30px;
+      color: #f7cc4b;
+      font-size: 16px;
+      transition: 0.5s;
+      &:hover {
+        color: #fff;
+        background-color: #f7cc4b;
+      }
+    }
+  }
+}

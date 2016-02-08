@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
+
+@import 'compass';
+@import "grids";
+@import "reset";
+@import "layout/header";
+@import "site-parts/hero";
+@import "site-parts/about";
+@import "site-parts/video";
+@import "site-parts/team";
+@import "site-parts/parallax";
+@import "site-parts/principles";
+@import "site-parts/portfolio";
+@import "site-parts/achievements";
+@import "site-parts/mail-list";
+@import "layout/footer";
+
+@include border-box-sizing();
+.container{
+  @include container();
+  padding:0 15px;
+  overflow: hidden;
+}
+img{
+  max-width:100%;
+}

@@ -1,0 +1,213 @@
+footer{
+  overflow: hidden;
+  background-color: #414146;
+  padding: 15px 0;
+  .flex-wrap{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    h2,h4{
+      color: white;
+      font-size: 18px;
+    }
+    .left-col-contacts{
+      max-width: 410px;
+      p{
+        margin:25px 0;
+        color: white;
+        font-size: 13px;
+        line-height: 21px;
+      }
+      a{
+        display:inline-block;
+        border-bottom: 2px solid #ffea00;
+        padding:10px 20px;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        transition: .5s;
+        &:hover{
+          color:black;
+          background-color:#fff;
+        }
+      }
+      h3{
+        margin:35px 0 20px;
+        color: white;
+        font-size: 18px;
+      }
+      .photo-stream{
+        li{
+          display:inline-block;
+          float: left;
+        }
+      }
+    }
+    .center-col-contacts{
+      max-width: 435px;
+      overflow: hidden;
+      text-align: left;
+      .tweets-list{
+        margin:25px 0;
+        li{
+          display:inline-block;
+          max-height: 55px;
+          margin-bottom: 10px;
+          font-size: 13px;
+          line-height: 21px;
+          color: white;
+          &:last-child{
+            margin-bottom: 30px;
+          }
+          a{
+            color: white;
+            font-size: 13px;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+          .important-info{
+            color: #ffea00;
+          }
+          .fa{
+            display:inline-block;
+            float:left;
+            padding: 5px 15px 65px 0;
+            font-size: 28px;
+            color:#fff;
+          }
+          p{
+            color: #ffea00;
+            font-size: 8px;
+          }
+        }
+      }
+      h4{
+        display:inline-block;
+        margin-right: 2px;
+      }
+      .social-list{
+        display:inline-block;
+        li{
+          display:inline-block;
+          .fa{
+            display:block;
+            width: 30px;
+            height: 30px;
+            padding: 8px;
+            font-size: 16px;
+            color:#fff;
+            background-color: black;
+            &:hover{
+              background-color: #fff;
+              color:black;
+            }
+          }
+        }
+      }
+    }
+    .right-col-contacts{
+      .address{
+        margin: 25px 0;
+        li{
+          display:block;
+          overflow: hidden;
+          margin: 20px 0;
+          .fa {
+            width: 30px;
+            height: 30px;
+            float:left;
+            clear: both;
+            margin: 7px 10PX 0 0;
+            padding: 5px;
+            font-size: 20px;
+            color: #fff;
+            background-color: black;
+          }
+          .wrap-address {
+            float:left;
+          }
+          .wrap-email{
+            float:left;
+            margin-top:10px;
+            a{
+              color: #ffea00;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+          p{
+            color: white;
+            font-size: 13px;
+            line-height: 21px;
+          }
+        }
+      }
+      form{
+        input[name="message"]{
+          width: 230px;
+          border:0px solid transparent;
+          border-bottom: 2px solid #ffea00;
+          background: transparent;
+          color:#fff;
+        }
+        button{
+          width:28px;
+          height: 21px;
+          background-color: black;
+          margin-left: -4px;
+          color:#fff;
+          border:none;
+          &:hover{
+            opacity: .7;
+          }
+        }
+      }
+
+      }
+    }
+  .prefooter{
+    display:flex;
+    overflow: hidden;
+    background-color: black;
+    margin-top: 20px;
+    span{
+      float: left;
+      margin-top: 20px;
+      display: inline-block;
+      color:#fff;
+    }
+    .footer-nav{
+      @media screen and (min-width:800px){
+        float:right;
+        margin: 20px 0 20px 120px;
+      }
+      li{
+        text-align: center;
+        @media screen and (min-width:800px){
+          display:inline-block;
+          margin-right: 50px;
+          &:last-child{
+            margin-right: 0px;
+          }
+        }
+        a {
+          padding: 5px;
+          font-family: 'Source Code Pro';
+          font-size: 16px;
+          font-weight: 300;
+          color: #fff;
+          text-transform: uppercase;
+          transition: 0.5s;
+          &:hover {
+            text-decoration: underline;
+          }
+          @media screen and (min-width:800px){
+            padding: 20px 10px;
+          }
+        }
+      }
+    }
+  }
+  }

@@ -1,0 +1,945 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 4, ../sass/_reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/_reset.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px 'Roboto', sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+/* line 6, ../sass/_reset.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+/* line 12, ../sass/_reset.scss */
+select, input, textarea {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_reset.scss */
+textarea {
+  vertical-align: top;
+}
+
+/* line 14, ../sass/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 15, ../sass/_reset.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_reset.scss */
+img, fieldset {
+  border: 0;
+}
+
+/* line 17, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, ../sass/_reset.scss */
+a:link, a:visited {
+  font: 14px 'Roboto', sans-serif;
+  color: #4C8BBF;
+  text-decoration: none;
+}
+
+/* line 19, ../sass/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/layout/_header.scss */
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.35;
+  background-color: black;
+}
+@media screen and (min-width: 800px) {
+  /* line 1, ../sass/layout/_header.scss */
+  header {
+    min-height: 100px;
+  }
+}
+/* line 10, ../sass/layout/_header.scss */
+header h1 {
+  margin: 34px auto 10px;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  /* line 10, ../sass/layout/_header.scss */
+  header h1 {
+    float: left;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 17, ../sass/layout/_header.scss */
+  header .main-navigation {
+    float: right;
+    margin-top: 35px;
+  }
+}
+/* line 23, ../sass/layout/_header.scss */
+header .main-navigation ul li {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 800px) {
+  /* line 23, ../sass/layout/_header.scss */
+  header .main-navigation ul li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  /* line 32, ../sass/layout/_header.scss */
+  header .main-navigation ul li:last-child {
+    margin-right: 0px;
+  }
+}
+/* line 36, ../sass/layout/_header.scss */
+header .main-navigation ul li a {
+  color: #fff;
+  transition: 0.5s;
+}
+/* line 39, ../sass/layout/_header.scss */
+header .main-navigation ul li a:hover {
+  color: #bbb;
+}
+
+/* line 1, ../sass/site-parts/_hero.scss */
+#hero {
+  position: relative;
+  overflow: hidden;
+  max-height: 774px;
+  background: url("../images/hero-bg.jpg") no-repeat #fff;
+  background-size: cover;
+  opacity: 0.75;
+}
+/* line 8, ../sass/site-parts/_hero.scss */
+#hero h2 {
+  margin: 270px 0 100px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+  color: white;
+}
+@media screen and (min-width: 530px) {
+  /* line 8, ../sass/site-parts/_hero.scss */
+  #hero h2 {
+    margin-bottom: 310px;
+    font-size: 82px;
+    line-height: 98px;
+  }
+}
+/* line 19, ../sass/site-parts/_hero.scss */
+#hero h2 span {
+  color: #f7cc4b;
+}
+
+/* line 1, ../sass/site-parts/_about.scss */
+#about {
+  overflow: hidden;
+  margin: 0 -50px 0;
+  padding: 0 50px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  background-color: white;
+}
+/* line 21, ../sass/site-parts/_about.scss */
+#about .container {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+/* line 28, ../sass/site-parts/_about.scss */
+#about article {
+  overflow: hidden;
+  margin: 100px 0 50px;
+  padding: 30px 0 0 15px;
+}
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  /* line 28, ../sass/site-parts/_about.scss */
+  #about article {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 28, ../sass/site-parts/_about.scss */
+  #about article {
+    margin-bottom: 250px;
+  }
+}
+/* line 38, ../sass/site-parts/_about.scss */
+#about article img {
+  float: right;
+}
+/* line 41, ../sass/site-parts/_about.scss */
+#about article h2 {
+  float: left;
+  color: #222;
+  font-size: 60px;
+  font-weight: 100;
+}
+/* line 47, ../sass/site-parts/_about.scss */
+#about article h3 {
+  clear: left;
+  float: left;
+  margin: 15px 0 50px;
+  color: #f7cc4b;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+}
+/* line 56, ../sass/site-parts/_about.scss */
+#about article p {
+  clear: left;
+  float: left;
+  margin-bottom: 35px;
+  max-width: 495px;
+  color: #b1b1b1;
+  font-size: 16px;
+  line-height: 24px;
+}
+/* line 65, ../sass/site-parts/_about.scss */
+#about article a {
+  clear: left;
+  float: left;
+  display: block;
+  width: 170px;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 2px solid #f7cc4b;
+  border-radius: 1px;
+  padding: 10px 30px;
+  color: #f7cc4b;
+  font-size: 16px;
+  transition: 0.5s;
+}
+/* line 78, ../sass/site-parts/_about.scss */
+#about article a:hover {
+  color: #fff;
+  background-color: #f7cc4b;
+}
+
+/* line 1, ../sass/site-parts/_video.scss */
+#video {
+  overflow: hidden;
+  margin: 0 -60px 0;
+  padding: 0 60px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  background-color: #f7cc4b;
+}
+/* line 21, ../sass/site-parts/_video.scss */
+#video .container {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+/* line 28, ../sass/site-parts/_video.scss */
+#video h2 {
+  margin: 70px 0 10px;
+  color: white;
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+}
+@media screen and (min-width: 370px) {
+  /* line 28, ../sass/site-parts/_video.scss */
+  #video h2 {
+    font-size: 60px;
+  }
+}
+/* line 38, ../sass/site-parts/_video.scss */
+#video p {
+  margin: 0 auto 50px;
+  color: #222;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+/* line 45, ../sass/site-parts/_video.scss */
+#video .video-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 820px;
+  max-height: 480px;
+  margin: 0 auto 50px;
+  border-radius: 4px;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  background-color: #f8f8f8;
+}
+/* line 56, ../sass/site-parts/_video.scss */
+#video .video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  /* line 45, ../sass/site-parts/_video.scss */
+  #video .video-wrapper {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 45, ../sass/site-parts/_video.scss */
+  #video .video-wrapper {
+    margin-bottom: 250px;
+  }
+}
+
+/* line 1, ../sass/site-parts/_team.scss */
+#team {
+  overflow: hidden;
+  margin: 0 -60px 0;
+  padding: 0 60px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+/* line 20, ../sass/site-parts/_team.scss */
+#team .container {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+/* line 27, ../sass/site-parts/_team.scss */
+#team h2 {
+  margin: 100px 0 15px;
+  color: #222;
+  font-size: 60px;
+  font-weight: 100;
+  text-align: center;
+}
+/* line 34, ../sass/site-parts/_team.scss */
+#team p {
+  margin: 0 auto 60px;
+  color: #f7cc4b;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+/* line 41, ../sass/site-parts/_team.scss */
+#team .slides {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto 100px;
+}
+/* line 46, ../sass/site-parts/_team.scss */
+#team .slides li {
+  display: inline-block;
+  margin: 0 auto 10px;
+  padding: 0 10px;
+}
+/* line 50, ../sass/site-parts/_team.scss */
+#team .slides li img {
+  display: block;
+  margin: 0 auto 30px;
+}
+/* line 54, ../sass/site-parts/_team.scss */
+#team .slides li h4 {
+  margin-bottom: 10px;
+  color: #222;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+/* line 61, ../sass/site-parts/_team.scss */
+#team .slides li span {
+  display: block;
+  color: #f7cc4b;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* line 1, ../sass/site-parts/_parallax.scss */
+#parallax {
+  overflow: hidden;
+  background: url("../images/parallax-bg.jpg") no-repeat #222;
+  background-size: cover;
+  opacity: 0.75;
+  margin: 0 -60px 0;
+  padding: 0 60px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+/* line 23, ../sass/site-parts/_parallax.scss */
+#parallax .parallax-bg {
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+/* line 35, ../sass/site-parts/_parallax.scss */
+#parallax h2 {
+  margin: 300px auto 15px;
+  color: white;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+}
+/* line 42, ../sass/site-parts/_parallax.scss */
+#parallax span {
+  display: block;
+  margin-bottom: 40px;
+  color: #f7cc4b;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+/* line 50, ../sass/site-parts/_parallax.scss */
+#parallax p {
+  max-width: 569px;
+  margin: 0 auto 40px;
+  color: #b1b1b1;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+/* line 59, ../sass/site-parts/_parallax.scss */
+#parallax a {
+  display: block;
+  width: 170px;
+  height: 40px;
+  margin: 0 auto 200px;
+  border: 2px solid #f7cc4b;
+  border-radius: 1px;
+  padding: 10px 30px;
+  color: #f7cc4b;
+  font-size: 16px;
+  transition: 0.5s;
+}
+/* line 70, ../sass/site-parts/_parallax.scss */
+#parallax a:hover {
+  color: #fff;
+  background-color: #f7cc4b;
+}
+
+/* line 1, ../sass/site-parts/_principles.scss */
+#principles {
+  overflow: hidden;
+}
+/* line 3, ../sass/site-parts/_principles.scss */
+#principles img {
+  float: left;
+  margin: 200px 0 0;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
+/* line 9, ../sass/site-parts/_principles.scss */
+#principles article {
+  float: left;
+  max-width: 500px;
+  margin: 230px 0 300px 40px;
+}
+/* line 13, ../sass/site-parts/_principles.scss */
+#principles article h2 {
+  margin-bottom: 15px;
+  color: #222;
+  font-size: 60px;
+  font-weight: 100;
+}
+/* line 19, ../sass/site-parts/_principles.scss */
+#principles article span {
+  display: block;
+  margin-bottom: 40px;
+  color: #f7cc4b;
+  font-size: 20px;
+  font-weight: 300;
+}
+/* line 26, ../sass/site-parts/_principles.scss */
+#principles article p {
+  margin-bottom: 40px;
+  color: #b1b1b1;
+  font-size: 16px;
+  line-height: 24px;
+}
+/* line 32, ../sass/site-parts/_principles.scss */
+#principles article a {
+  display: block;
+  width: 170px;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 2px solid #f7cc4b;
+  border-radius: 1px;
+  padding: 10px 30px;
+  color: #f7cc4b;
+  font-size: 16px;
+  transition: 0.5s;
+}
+/* line 43, ../sass/site-parts/_principles.scss */
+#principles article a:hover {
+  color: #fff;
+  background-color: #f7cc4b;
+}
+
+/* line 1, ../sass/site-parts/_portfolio.scss */
+#portfolio {
+  overflow: hidden;
+  margin: 0 -60px 0;
+  padding: 0 60px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  background-color: #f7cc4b;
+}
+/* line 21, ../sass/site-parts/_portfolio.scss */
+#portfolio .container {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+/* line 28, ../sass/site-parts/_portfolio.scss */
+#portfolio h2 {
+  margin: 70px 0 10px;
+  color: white;
+  font-size: 60px;
+  font-weight: 100;
+  text-align: center;
+}
+/* line 35, ../sass/site-parts/_portfolio.scss */
+#portfolio p {
+  margin-bottom: 50px;
+  color: #444;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+/* line 42, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto 200px;
+}
+/* line 47, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-item li {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  margin: 0 auto;
+}
+/* line 53, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-item li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+/* line 64, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-item li a:hover {
+  opacity: 1;
+}
+/* line 67, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-item li a span {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 22px;
+  opacity: 0.5;
+  font-size: 18px;
+  background-color: white;
+}
+
+/* line 1, ../sass/site-parts/_achievements.scss */
+#achievements {
+  overflow: hidden;
+}
+/* line 3, ../sass/site-parts/_achievements.scss */
+#achievements h2 {
+  margin: 100px 0 15px;
+  text-align: center;
+  color: #222;
+  font-size: 60px;
+  font-weight: 100;
+}
+/* line 10, ../sass/site-parts/_achievements.scss */
+#achievements p {
+  margin: 0 auto 60px;
+  color: #f7cc4b;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+/* line 17, ../sass/site-parts/_achievements.scss */
+#achievements .achiev-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto 100px;
+}
+/* line 23, ../sass/site-parts/_achievements.scss */
+#achievements .achiev-list li {
+  display: inline-block;
+  margin: 0 auto 15px;
+  padding: 15px;
+}
+/* line 27, ../sass/site-parts/_achievements.scss */
+#achievements .achiev-list li .fa {
+  display: block;
+  font-size: 60px;
+  text-align: center;
+}
+/* line 32, ../sass/site-parts/_achievements.scss */
+#achievements .achiev-list li .count-achiev {
+  display: block;
+  margin: 15px 0;
+  color: #f7cc4b;
+  font-size: 84px;
+  font-weight: 300;
+  text-align: center;
+}
+/* line 40, ../sass/site-parts/_achievements.scss */
+#achievements .achiev-list li h4 {
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+}
+/* line 46, ../sass/site-parts/_achievements.scss */
+#achievements .achiev-list:after {
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+}
+/* line 57, ../sass/site-parts/_achievements.scss */
+#achievements .achiev-descript {
+  margin: 120px auto 20px;
+  max-width: 929px;
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 35px;
+  color: #222;
+}
+/* line 64, ../sass/site-parts/_achievements.scss */
+#achievements .achiev-descript span {
+  color: #f7cc4b;
+}
+/* line 68, ../sass/site-parts/_achievements.scss */
+#achievements .author-descript {
+  display: block;
+  margin-bottom: 200px;
+  text-align: center;
+  color: #bbb;
+  font-size: 16px;
+}
+
+/* line 1, ../sass/site-parts/_mail-list.scss */
+#mail-list {
+  overflow: hidden;
+  overflow: hidden;
+  margin: 0 -60px 0;
+  padding: 0 60px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+  background-color: #f7cc4b;
+}
+/* line 22, ../sass/site-parts/_mail-list.scss */
+#mail-list .container {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+/* line 29, ../sass/site-parts/_mail-list.scss */
+#mail-list h2 {
+  margin: 100px 0 15px;
+  color: white;
+  font-size: 60px;
+  font-weight: 100;
+  text-align: center;
+}
+/* line 36, ../sass/site-parts/_mail-list.scss */
+#mail-list p {
+  margin: 0 auto 60px;
+  color: #222;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+/* line 43, ../sass/site-parts/_mail-list.scss */
+#mail-list .mail-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 170px;
+}
+/* line 48, ../sass/site-parts/_mail-list.scss */
+#mail-list .mail-form input {
+  margin: 0 15px 15px 0;
+}
+/* line 50, ../sass/site-parts/_mail-list.scss */
+#mail-list .mail-form input:last-child {
+  margin-right: 0;
+}
+/* line 54, ../sass/site-parts/_mail-list.scss */
+#mail-list .mail-form input[type="text"], #mail-list .mail-form input[type="email"] {
+  width: 288px;
+  height: 54px;
+  border: 2px solid white;
+  border-radius: 1px;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+}
+/* line 61, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+#mail-list .mail-form input[type="text"]:-moz-placeholder, #mail-list .mail-form input[type="email"]:-moz-placeholder {
+  color: white;
+  font-size: 16px;
+}
+/* line 64, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+#mail-list .mail-form input[type="text"]::-moz-placeholder, #mail-list .mail-form input[type="email"]::-moz-placeholder {
+  color: white;
+  font-size: 16px;
+}
+/* line 67, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+#mail-list .mail-form input[type="text"]:-ms-input-placeholder, #mail-list .mail-form input[type="email"]:-ms-input-placeholder {
+  color: white;
+  font-size: 16px;
+}
+/* line 56, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+#mail-list .mail-form input[type="text"]::-webkit-input-placeholder, #mail-list .mail-form input[type="email"]::-webkit-input-placeholder {
+  color: white;
+  font-size: 16px;
+}
+/* line 66, ../sass/site-parts/_mail-list.scss */
+#mail-list .mail-form input[type="text"]:focus::-webkit-input-placeholder, #mail-list .mail-form input[type="email"]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+/* line 67, ../sass/site-parts/_mail-list.scss */
+#mail-list .mail-form input[type="text"]:focus::-moz-placeholder, #mail-list .mail-form input[type="email"]:focus::-moz-placeholder {
+  color: transparent;
+}
+/* line 68, ../sass/site-parts/_mail-list.scss */
+#mail-list .mail-form input[type="text"]:focus:-moz-placeholder, #mail-list .mail-form input[type="email"]:focus:-moz-placeholder {
+  color: transparent;
+}
+/* line 69, ../sass/site-parts/_mail-list.scss */
+#mail-list .mail-form input[type="text"]:focus:-ms-input-placeholder, #mail-list .mail-form input[type="email"]:focus:-ms-input-placeholder {
+  color: transparent;
+}
+/* line 71, ../sass/site-parts/_mail-list.scss */
+#mail-list .mail-form input[type="button"] {
+  width: 184px;
+  height: 54px;
+  border: 2px solid #222;
+  border-radius: 1px;
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  font-size: 16px;
+  transition: 0.5s;
+}
+/* line 81, ../sass/site-parts/_mail-list.scss */
+#mail-list .mail-form input[type="button"]:hover {
+  opacity: 0.7;
+}
+
+/* line 1, ../sass/layout/_footer.scss */
+footer {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background-color: #222;
+}
+/* line 6, ../sass/layout/_footer.scss */
+footer .social-list {
+  margin: 60px auto 25px;
+  text-align: center;
+}
+/* line 9, ../sass/layout/_footer.scss */
+footer .social-list li {
+  display: inline-block;
+  margin: 0 12px 12px 0;
+}
+/* line 12, ../sass/layout/_footer.scss */
+footer .social-list li:last-child {
+  margin-right: 0;
+}
+/* line 15, ../sass/layout/_footer.scss */
+footer .social-list li .fa {
+  width: 48px;
+  height: 48px;
+  border: 2px solid white;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  color: #fff;
+  transition: 0.5s;
+}
+/* line 24, ../sass/layout/_footer.scss */
+footer .social-list li .fa:hover {
+  color: #222;
+  background-color: #fff;
+}
+/* line 31, ../sass/layout/_footer.scss */
+footer .copyright-text {
+  margin-bottom: 60px;
+  font-size: 16px;
+  color: #bbb;
+}
+/* line 35, ../sass/layout/_footer.scss */
+footer .copyright-text span {
+  color: #f7cc4b;
+}
+
+/* line 21, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 19, ../sass/style.scss */
+.container {
+  max-width: 1210px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+/* line 12, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 24, ../sass/style.scss */
+img {
+  max-width: 100%;
+}

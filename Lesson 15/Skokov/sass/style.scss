@@ -1,0 +1,25 @@
+@font-face {
+  font-family: CenturyGothic;
+  src: url(../fonts/century-gothic.ttf);
+}
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:300);
+
+@import 'compass';
+@import "grids";
+@import "reset";
+@import "layout/header";
+@import "site-parts/hero";
+@import "site-parts/content";
+@import "site-parts/portfolio";
+@import "site-parts/clients";
+@import "layout/footer";
+
+@include border-box-sizing();
+.container{
+  @include container();
+  padding:0 15px;
+  overflow: hidden;
+}
+img{
+  max-width:100%;
+}

@@ -1,0 +1,49 @@
+#portfolio{
+  overflow: hidden;
+  background-color: #f6f6f6;
+  h2{
+    position: relative;
+    margin:0 auto 30px;
+    text-align: center;
+    span{
+      padding: 5px 25px;
+      background-color: #424147;
+      color: #ffea00;
+      text-transform: uppercase;
+    }
+    &:before{
+      content:'';
+      display:block;
+      position: absolute;
+      width: 50%;
+      top: 15px;
+      left: -107px;
+      height: 1px;
+      background-color: #cacaca;
+    }
+    &:after{
+      content:'';
+      display:block;
+      position: absolute;
+      width: 50%;
+      top: 15px;
+      right: -107px;
+      height: 1px;
+      background-color: #cacaca;
+    }
+  }
+  p{
+    margin:0 auto 30px;
+    color: #424146;
+    font-size: 16px;
+    text-align: center;
+  }
+  .portfolio-item{
+    margin-bottom: 70px;
+    overflow: hidden;
+    li{
+      float:left;
+      display:inline-block;
+    }
+  }
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skokov</title>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+
+    <!--<script src="js/slider.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<!-- заметил много обращений в стилях к тэгам без задания классов. попадаються вложения больше чем на 3 уровня. В разделе порфолио
+э нужен jquery плагин, и не только там. Проверял Юра Кириллов-->
+<header id="navbar">
+    <div class="container">
+        <h1 id="logo"><a href="#hero"><img src='images/logo.png' alt='Skokov Logo'/></a></h1>
+        <nav class='main-navigation'>
+            <ul>
+                <div class="itemsMenu">
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="hero">
+    <div class="container">
+        <h2 class="main-title"><span>We believe </span><span>in quality design</span></h2>
+        <p class="hero-descript">
+            <span>Any creative project is unique </span>
+            <span>and should be provided with  </span>
+            <span>the appropriate quality  </span>
+        </p>
+        <a href="#" class="hero-btn">Order Now</a>
+        <ul class="team-items">
+            <li><img src="images/hero-img-0.jpg" alt="Team Photo"></li>
+            <li><img src="images/hero-img-01.jpg" alt="Team Photo"></li>
+            <li><img src="images/hero-img-02.jpg" alt="Team Photo"></li>
+            <li class="empty-cell"></li>
+            <li class="empty-cell"></li>
+            <li><img src="images/hero-img-03.jpg" alt="Team Photo"></li>
+            <li><img src="images/hero-img-04.jpg" alt="Team Photo"></li>
+            <li><img src="images/hero-img-05.jpg" alt="Team Photo"></li>
+            <li><img src="images/hero-img-06.jpg" alt="Team Photo"></li>
+            <li><img src="images/hero-img-07.jpg" alt="Team Photo"></li>
+            <li><img src="images/hero-img-08.jpg" alt="Team Photo"></li>
+            <li class="empty-cell"></li>
+            <li class="empty-cell"></li>
+            <li><img src="images/hero-img-09.jpg" alt="Team Photo"></li>
+            <li class="empty-cell"></li>
+            <li class="empty-cell"></li>
+        </ul>
+    </div>
+</section>
+
+<section id="content">
+    <div class="container">
+        <h2>About Us</h2>
+        <p class="descript-content">We specialize in Web Design / Development and Graphic Design</p>
+        <ul class="skills-list">
+            <li class="skills-item" class="main-img-skill">
+                <img src="images/content-title-img-0.png" alt="#" class="main-img-skill">
+                <h3>web development</h3>
+                <p class="descript-item">Lorem ipsum dolor sit amet,consectetur.</p>
+                <div class="rollover">
+                    <img src="images/bog-post-img.jpg" alt="#">
+                    <h4><span>Redesigning</span><span>With Personality</span></h4>
+                    <p>in <span>web design</span></p>
+                </div>
+            </li>
+            <li class="skills-item">
+                <img src="images/content-title-img-0.png" alt="#" class="main-img-skill">
+                <h3>web design</h3>
+                <p class="descript-item">Lorem ipsum dolor sit amet,consectetur.</p>
+                <div class="rollover">
+                    <img src="images/bog-post-img.jpg" alt="#">
+                    <h4><span>Redesigning</span><span>With Personality</span></h4>
+                    <p>in <span>web design</span></p>
+                </div>
+            </li>
+            <li class="skills-item">
+                <img src="images/content-title-img-0.png" alt="#" class="main-img-skill">
+                <h3>web development</h3>
+                <p class="descript-item">Lorem ipsum dolor sit amet,consectetur.</p>
+                <div class="rollover">
+                    <img src="images/bog-post-img.jpg" alt="#">
+                    <h4><span>Redesigning</span><span>With Personality</span></h4>
+                    <p>in <span>web design</span></p>
+                </div>
+            </li>
+            <li class="skills-item">
+                <img src="images/content-title-img-0.png" alt="#" class="main-img-skill">
+                <h3>Graphic Design</h3>
+                <p class="descript-item">Lorem ipsum dolor sit amet,consectetur.</p>
+                <div class="rollover">
+                    <img src="images/bog-post-img.jpg" alt="#">
+                    <h4><span>Redesigning</span><span>With Personality</span></h4>
+                    <p>in <span>web design</span></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="portfolio">
+        <h2><span>Our Works</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+        <ul class="portfolio-item">
+            <li><a href="#"><img src="images/portfolio-work-1.jpg" alt="Portfolio-item"></a></li>
+            <li><a href="#"><img src="images/portfolio-work-2.jpg" alt="Portfolio-item"></a></li>
+            <li><a href="#"><img src="images/portfolio-work-3.jpg" alt="Portfolio-item"></a></li>
+            <li><a href="#"><img src="images/portfolio-work-4.jpg" alt="Portfolio-item"></a></li>
+            <li><a href="#"><img src="images/portfolio-work-5.jpg" alt="Portfolio-item"></a></li>
+            <li><a href="#"><img src="images/portfolio-work-6.jpg" alt="Portfolio-item"></a></li>
+            <li><a href="#"><img src="images/portfolio-work-7.jpg" alt="Portfolio-item"></a></li>
+            <li><a href="#"><img src="images/portfolio-work-8.jpg" alt="Portfolio-item"></a></li>
+            <li><a href="#"><img src="images/portfolio-work-9.jpg" alt="Portfolio-item"></a></li>
+            <li><a href="#"><img src="images/portfolio-work-10.jpg" alt="Portfolio-item"></a></li>
+            <li><a href="#"><img src="images/portfolio-work-11.jpg" alt="Portfolio-item"></a></li>
+        </ul>
+</section>
+
+<section id="clients">
+    <h2><span>our clients</span></h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+    <ul class="clients-items">
+        <li><a href="#"><img src="images/client-1.jpg" alt="Portfolio-item"></a></li>
+        <li><a href="#"><img src="images/client-2.jpg" alt="Portfolio-item"></a></li>
+        <li><a href="#"><img src="images/client-3.jpg" alt="Portfolio-item"></a></li>
+        <li><a href="#"><img src="images/client-4.jpg" alt="Portfolio-item"></a></li>
+        <li><a href="#"><img src="images/client-5.jpg" alt="Portfolio-item"></a></li>
+        <li><a href="#"><img src="images/client-6.jpg" alt="Portfolio-item"></a></li>
+        <li><a href="#"><img src="images/client-7.jpg" alt="Portfolio-item"></a></li>
+        <li><a href="#"><img src="images/client-8.jpg" alt="Portfolio-item"></a></li>
+    </ul>
+</section>
+
+<footer id="contacts">
+    <div class="container">
+        <div class="flex-wrap">
+            <div class="left-col-contacts">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisienim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                <a href="#">Learn more</a>
+                <h3>Photo Stream</h3>
+                <ul class="photo-stream">
+                    <li><img src="images/photo-stream-1.jpg" alt="Photo Stream"></li>
+                    <li><img src="images/photo-stream-2.jpg" alt="Photo Stream"></li>
+                    <li><img src="images/photo-stream-3.jpg" alt="Photo Stream"></li>
+                    <li><img src="images/photo-stream-4.jpg" alt="Photo Stream"></li>
+                    <li><img src="images/photo-stream-5.jpg" alt="Photo Stream"></li>
+                    <li><img src="images/photo-stream-6.jpg" alt="Photo Stream"></li>
+                </ul>
+            </div>
+            <div class="center-col-contacts">
+                <h2>Latest tweets</h2>
+                <ul class="tweets-list">
+                    <li>
+                        <span class="fa fa-twitter"></span> Check Out Dtbaker's <a class="important-info">@Arduino</a> Sales Notification <a class="important-info">#System</a>
+                        <a href="http://t.co/WBFKIWHJ">http://t.co/ WBFKIWHJ</a>
+                        <p>3 days ago</p>
+                    </li>
+                    <li>
+                        <span class="fa fa-twitter"></span>Community Superstar Winner – <a class="important-info">#OrganicBeeMedia</a>
+                        <a href="http://t.co/2Fs1nnMj">http://t.co/2Fs1nnMj</a>
+                        <p>3 days ago</p>
+                    </li>
+                    <li>
+                        <span class="fa fa-twitter"></span>Clean <a class="important-info">#Websites</a> Designs for Your <a class="important-info">#Inspiration</a>
+                        <a href="http://t.co/ SnRKu3HJ">http://t.co/ SnRKu3HJ</a>
+                        <p>5 days ago</p>
+                    </li>
+                    <li>
+                        <span class="fa fa-twitter"></span>Cute Online <a class="important-info">#Shops</a>
+                        <a href="http://t.co/ 1PoQN3bJ">http://t.co/ 1PoQN3bJ</a>
+                        <p>6 days ago</p>
+                    </li>
+                    <li>
+                        <span class="fa fa-twitter"></span>Download 40 vector <a class="important-info">#icons</a> package for <a class="important-info">#FREE</a>
+                        <a href="http://t.co/2Fp5GLqn">http://t.co/2Fp5GLqn</a>
+                        <p>6 days ago</p>
+                    </li>
+                </ul>
+                <h4>Social Connecting  </h4>
+                <ul class="social-list">
+                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="#" ><span class="fa fa-google-plus"></span></a></li>
+                    <li><a href="#" ><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#" ><span class="fa fa-linkedin"></span></a></li>
+                    <li><a href="#" ><span class="fa fa-youtube"></span></a></li>
+                    <li><a href="#" ><span class="fa fa-bold"></span></a></li>
+                    <li><a href="#" ><span class="fa fa-rss"></span></a></li>
+                    <li><a href="#" ><span class="fa fa-dribbble"></span></a></li>
+                </ul>
+            </div>
+            <div class="right-col-contacts">
+                <h2>Contact info</h2>
+                <ul class="address">
+                    <li><span class="fa fa-map-marker"></span>
+                        <div class="wrap-address">
+                            <p>Address: 12569 Saint Patrick des Prés,</p>
+                            <p>85000 Paris, France</p>
+                        </div>
+                    </li>
+                    <li><span class="fa fa-phone-square"></span>
+                        <div class="wrap-address">
+                            <p>Phone: +38 045 845-45-78</p>
+                            <p>+38 045 845-45-79</p>
+                        </div>
+                    </li>
+                    <li><span class="fa fa-envelope-o"></span>
+                        <p class="wrap-email">E-mail: <a href="#">freeforwebdesign@gmail.com</a></p>
+                    </li>
+                </ul>
+                <h3>Follow Us</h3>
+                <form method="post" action="#">
+                    <input name="message" >
+                    <button name="send-btn"><span class="fa fa-envelope"></span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="prefooter">
+        <div class="container">
+        <span>Copyright 2013 - FreeForWebDesign.com - All Rights Reserved</span>
+        <ul class="footer-nav">
+            <li><a href="#about">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

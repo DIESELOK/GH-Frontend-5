@@ -1,0 +1,46 @@
+header{
+  position: absolute;
+  z-index:1;
+  width:100%;
+  opacity: 0.35;
+  background-color: black;
+  @media screen and (min-width:800px){
+    min-height: 100px;
+  }
+  h1{
+    margin:34px auto 10px;
+    text-align: center;
+    @media screen and (min-width:800px){
+      float:left;
+    }
+  }
+  .main-navigation{
+    @media screen and (min-width:800px){
+      float:right;
+      margin-top: 35px;
+    }
+    ul {
+      li{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 28px;
+        text-transform: uppercase;
+        text-align: center;
+        @media screen and (min-width:800px){
+          display:inline-block;
+          margin-right: 15px;
+          &:last-child{
+            margin-right: 0px;
+          }
+        }
+        a {
+          color: #fff;
+          transition: 0.5s;
+          &:hover {
+            color: #bbb;
+          }
+        }
+      }
+    }
+  }
+}

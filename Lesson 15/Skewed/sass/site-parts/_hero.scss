@@ -1,0 +1,23 @@
+#hero{
+  position:relative;
+  overflow: hidden;
+  max-height: 774px;
+  background: url('../images/hero-bg.jpg') no-repeat #fff;
+  background-size: cover;
+  opacity: 0.75;
+  h2{
+    margin: 270px 0 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    color: white;
+    @media screen and (min-width:530px){
+      margin-bottom: 310px;
+      font-size: 82px;
+      line-height: 98px;
+    }
+    span{
+      color: #f7cc4b;
+    }
+  }
+}
