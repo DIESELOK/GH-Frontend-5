@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'AmbleRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AmbleRegular'), url('../fonts/Amble/Amble-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AmbleItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AmbleItalic'), url('../fonts/Amble/Amble-italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AmbleBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AmbleBold'), url('../fonts/Amble/Amble-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AmbleLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AmbleLight'), url('../fonts/Amble/Amble-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BIGJOHN';
+  font-style: normal;
+  font-weight: normal;
+  src: local('BIGJOHN'), url('../fonts/Bigjohn/bigjohn.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AvenirLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AvenirLight'), url('../fonts/Avenir/Avenir-Light.ttf') format('truetype');
+}
+
+
+@import 'compass';
+@import "grids";
+@import "reset";
+@import "layout/header";
+@import "site-parts/hero";
+@import "site-parts/intro";
+@import "site-parts/pure";
+@import "site-parts/portfolio";
+@import "site-parts/help";
+@import "site-parts/clients";
+@import "site-parts/team";
+@import "site-parts/big-video";
+@import "site-parts/skills";
+@import "site-parts/quote";
+@import "site-parts/contact";
+@import "layout/footer";
+
+@include border-box-sizing();
+.container{
+  @include container();
+  padding:0 15px;
+  overflow: hidden;
+}
+img{
+  max-width:100%;
+}

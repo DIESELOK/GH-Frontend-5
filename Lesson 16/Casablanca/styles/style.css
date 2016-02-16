@@ -1,0 +1,1086 @@
+@font-face {
+  font-family: 'AmbleRegular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("AmbleRegular"), url("../fonts/Amble/Amble-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'AmbleItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("AmbleItalic"), url("../fonts/Amble/Amble-italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'AmbleBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("AmbleBold"), url("../fonts/Amble/Amble-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'AmbleLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local("AmbleLight"), url("../fonts/Amble/Amble-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'BIGJOHN';
+  font-style: normal;
+  font-weight: normal;
+  src: local("BIGJOHN"), url("../fonts/Bigjohn/bigjohn.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'AvenirLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirLight"), url("../fonts/Avenir/Avenir-Light.ttf") format("truetype");
+}
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 4, ../sass/_reset.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/_reset.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font: 22px 'AmbleRegular', sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+/* line 6, ../sass/_reset.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, checkbox, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+/* line 12, ../sass/_reset.scss */
+select, input, textarea {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_reset.scss */
+textarea {
+  vertical-align: top;
+}
+
+/* line 14, ../sass/_reset.scss */
+:focus {
+  outline: none;
+}
+
+/* line 15, ../sass/_reset.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_reset.scss */
+img, fieldset {
+  border: 0;
+}
+
+/* line 17, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, ../sass/_reset.scss */
+a:link, a:visited {
+  font: 22px 'AmbleRegular', sans-serif;
+  color: #4C8BBF;
+  text-decoration: none;
+}
+
+/* line 19, ../sass/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/layout/_header.scss */
+#navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin: 15px 0 0 15px;
+}
+/* line 7, ../sass/layout/_header.scss */
+#navbar .iconMenu {
+  float: left;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 16, ../sass/layout/_header.scss */
+#navbar .itemsMenu li {
+  float: left;
+  width: 100%;
+  display: inline;
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+@media screen and (min-width: 930px) {
+  /* line 16, ../sass/layout/_header.scss */
+  #navbar .itemsMenu li {
+    display: inline-block;
+    width: auto;
+    margin-right: 15px;
+    padding: 0 10px;
+  }
+  /* line 27, ../sass/layout/_header.scss */
+  #navbar .itemsMenu li:last-child {
+    margin-right: 0;
+  }
+}
+/* line 31, ../sass/layout/_header.scss */
+#navbar .itemsMenu li a {
+  color: #fff;
+}
+/* line 33, ../sass/layout/_header.scss */
+#navbar .itemsMenu li a:hover {
+  transition: 0.5s;
+  border-bottom: 3px solid #f2f2f2;
+}
+
+/* line 42, ../sass/layout/_header.scss */
+.showitems {
+  display: block !important;
+  transition: 1s;
+}
+
+/* line 47, ../sass/layout/_header.scss */
+.iconMenu {
+  display: block;
+}
+
+/* line 51, ../sass/layout/_header.scss */
+.itemsMenu {
+  display: none;
+}
+
+/* line 55, ../sass/layout/_header.scss */
+.itemsMenu li {
+  display: block;
+}
+
+/* line 1, ../sass/site-parts/_hero.scss */
+.hero {
+  overflow: hidden;
+  position: relative;
+  background: url("../images/hero-bg.jpg") center/cover no-repeat;
+}
+/* line 5, ../sass/site-parts/_hero.scss */
+.hero .hero-title {
+  position: relative;
+  margin: 320px 0 45px;
+  text-align: center;
+  color: white;
+  font-family: BigJohn;
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 930px) {
+  /* line 5, ../sass/site-parts/_hero.scss */
+  .hero .hero-title {
+    margin-top: 18%;
+  }
+}
+/* line 17, ../sass/site-parts/_hero.scss */
+.hero .hero-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 86px;
+  height: 2px;
+  margin: 50px auto;
+  background-color: white;
+}
+/* line 29, ../sass/site-parts/_hero.scss */
+.hero p {
+  max-width: 628px;
+  margin: 100px auto 20%;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #fffefe;
+  line-height: 30px;
+}
+/* line 37, ../sass/site-parts/_hero.scss */
+.hero a {
+  display: block;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+/* line 1, ../sass/site-parts/_intro.scss */
+#intro {
+  overflow: hidden;
+  text-align: center;
+}
+/* line 4, ../sass/site-parts/_intro.scss */
+#intro h2 {
+  position: relative;
+  margin: 100px 0 100px;
+  color: #222;
+  font-family: 'BigJohn';
+  text-transform: uppercase;
+  font-size: 30px;
+}
+/* line 11, ../sass/site-parts/_intro.scss */
+#intro h2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 86px;
+  height: 2px;
+  margin: 50px auto;
+  background-color: #222;
+}
+/* line 23, ../sass/site-parts/_intro.scss */
+#intro p {
+  max-width: 742px;
+  margin: 0 auto 100px;
+  color: #222;
+  font-family: 'AmbleLight';
+  font-size: 22px;
+  line-height: 36px;
+}
+
+/* line 1, ../sass/site-parts/_pure.scss */
+#pure {
+  overflow: hidden;
+  background: url("../images/pure-bg.jpg") center/cover no-repeat;
+}
+/* line 4, ../sass/site-parts/_pure.scss */
+#pure h2 {
+  margin: 180px auto;
+  text-align: center;
+}
+/* line 8, ../sass/site-parts/_pure.scss */
+#pure a {
+  border: 3px solid white;
+  padding: 40px 40px;
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  transition: 0.5s;
+}
+@media screen and (min-width: 410px) {
+  /* line 8, ../sass/site-parts/_pure.scss */
+  #pure a {
+    padding: 40px 90px;
+  }
+}
+/* line 18, ../sass/site-parts/_pure.scss */
+#pure a:hover {
+  opacity: 0.5;
+}
+
+/* line 1, ../sass/site-parts/_portfolio.scss */
+#portfolio {
+  overflow: hidden;
+  background-color: #f4f4f4;
+}
+/* line 4, ../sass/site-parts/_portfolio.scss */
+#portfolio h2 {
+  position: relative;
+  margin: 110px auto;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222;
+  font-family: BigJohn;
+  font-size: 30px;
+}
+/* line 12, ../sass/site-parts/_portfolio.scss */
+#portfolio h2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 86px;
+  height: 2px;
+  margin: 50px auto;
+  background-color: #222;
+}
+/* line 24, ../sass/site-parts/_portfolio.scss */
+#portfolio .filter-navigation {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 800px) {
+  /* line 24, ../sass/site-parts/_portfolio.scss */
+  #portfolio .filter-navigation {
+    justify-content: center;
+  }
+}
+/* line 32, ../sass/site-parts/_portfolio.scss */
+#portfolio .filter-navigation li {
+  display: inline-block;
+}
+/* line 34, ../sass/site-parts/_portfolio.scss */
+#portfolio .filter-navigation li button {
+  color: #222;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  padding: 0 15px;
+  background: transparent;
+  transition: 0.5s;
+}
+/* line 42, ../sass/site-parts/_portfolio.scss */
+#portfolio .filter-navigation li button:focus {
+  font-family: BigJohn;
+  font-weight: 700;
+}
+/* line 49, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+/* line 54, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list .mix {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  /* line 49, ../sass/site-parts/_portfolio.scss */
+  #portfolio .portfolio-list {
+    justify-content: space-between;
+  }
+}
+/* line 60, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list li {
+  position: relative;
+  overflow: hidden;
+  max-height: 420px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+/* line 66, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list li .portfolio-rollover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: black;
+  transition: 0.5s;
+}
+/* line 75, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list li .portfolio-rollover:hover {
+  opacity: 0.75;
+}
+/* line 78, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list li .portfolio-rollover h4 {
+  margin: 150px auto 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: BigJohn;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* line 87, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list li .portfolio-rollover a {
+  display: block;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+/* line 93, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list li .portfolio-rollover a:hover {
+  text-decoration: underline;
+}
+/* line 96, ../sass/site-parts/_portfolio.scss */
+#portfolio .portfolio-list li .portfolio-rollover a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 48px;
+  height: 2px;
+  margin: 40px auto;
+  background-color: #d87843;
+}
+/* line 111, ../sass/site-parts/_portfolio.scss */
+#portfolio .more-btn {
+  text-align: center;
+  display: block;
+  margin-bottom: 70px;
+}
+/* line 115, ../sass/site-parts/_portfolio.scss */
+#portfolio .more-btn a {
+  border: 3px solid #222;
+  padding: 15px 40px;
+  color: #222;
+  font-size: 24px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+/* line 122, ../sass/site-parts/_portfolio.scss */
+#portfolio .more-btn a:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 410px) {
+  /* line 115, ../sass/site-parts/_portfolio.scss */
+  #portfolio .more-btn a {
+    padding: 15px 90px;
+  }
+}
+
+/* line 1, ../sass/site-parts/_help.scss */
+#help-sec {
+  overflow: hidden;
+  background: url("../images/help-bg.jpg") center/cover no-repeat;
+}
+/* line 4, ../sass/site-parts/_help.scss */
+#help-sec h2 {
+  margin: 180px auto;
+  text-align: center;
+}
+/* line 8, ../sass/site-parts/_help.scss */
+#help-sec a {
+  border: 3px solid white;
+  padding: 40px 40px;
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  transition: 0.5s;
+}
+@media screen and (min-width: 410px) {
+  /* line 8, ../sass/site-parts/_help.scss */
+  #help-sec a {
+    padding: 40px 90px;
+  }
+}
+/* line 18, ../sass/site-parts/_help.scss */
+#help-sec a:hover {
+  opacity: 0.5;
+}
+
+/* line 1, ../sass/site-parts/_clients.scss */
+#clients {
+  overflow: hidden;
+}
+/* line 3, ../sass/site-parts/_clients.scss */
+#clients h2 {
+  margin: 100px 0;
+  color: #222;
+  font-family: BigJohn;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 11, ../sass/site-parts/_clients.scss */
+#clients h2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 86px;
+  height: 2px;
+  margin: 50px auto;
+  background-color: #222;
+}
+/* line 24, ../sass/site-parts/_clients.scss */
+#clients .bx-wrapper {
+  margin-bottom: 130px;
+}
+
+/* line 1, ../sass/site-parts/_team.scss */
+#team {
+  overflow: hidden;
+}
+/* line 3, ../sass/site-parts/_team.scss */
+#team h2 {
+  position: relative;
+  margin: 110px auto;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222;
+  font-family: BigJohn;
+  font-size: 30px;
+}
+/* line 11, ../sass/site-parts/_team.scss */
+#team h2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 86px;
+  height: 2px;
+  margin: 50px auto;
+  background-color: #222;
+}
+/* line 23, ../sass/site-parts/_team.scss */
+#team p {
+  max-width: 742px;
+  margin: 100px auto 60px;
+  text-align: center;
+  color: #222;
+  line-height: 36px;
+  font-weight: 300;
+}
+/* line 31, ../sass/site-parts/_team.scss */
+#team .team-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+/* line 37, ../sass/site-parts/_team.scss */
+#team .team-list li {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+/* line 41, ../sass/site-parts/_team.scss */
+#team .team-list .active-team {
+  position: relative;
+  overflow: hidden;
+  max-height: 360px;
+  max-width: 270px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+/* line 48, ../sass/site-parts/_team.scss */
+#team .team-list .active-team .rollover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(34, 34, 34, 0.5);
+  opacity: 0;
+  transition: 0.5s;
+}
+/* line 58, ../sass/site-parts/_team.scss */
+#team .team-list .active-team .rollover:hover {
+  opacity: 0.48;
+}
+/* line 61, ../sass/site-parts/_team.scss */
+#team .team-list .active-team .rollover .fa {
+  color: #fff;
+  font-size: 20px;
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 50%;
+  float: right;
+  margin: 5px;
+}
+/* line 70, ../sass/site-parts/_team.scss */
+#team .team-list .active-team .rollover h4 {
+  clear: both;
+  margin-top: 90%;
+  color: white;
+  font-family: BigJohn;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+/* line 78, ../sass/site-parts/_team.scss */
+#team .team-list .active-team .rollover span {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+/* line 85, ../sass/site-parts/_team.scss */
+#team .team-list .team-hiring {
+  position: relative;
+  overflow: hidden;
+  height: 360px;
+  width: 270px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: 1px solid #222;
+}
+/* line 93, ../sass/site-parts/_team.scss */
+#team .team-list .team-hiring .apply-description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0;
+}
+/* line 99, ../sass/site-parts/_team.scss */
+#team .team-list .team-hiring .apply-description span {
+  display: block;
+  margin: 90px auto;
+  width: 120px;
+  color: #222;
+  font-family: BigJohn;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+/* line 108, ../sass/site-parts/_team.scss */
+#team .team-list .team-hiring .apply-description .apply-btn {
+  display: inline-block;
+  width: 180px;
+  padding: 18px 50px;
+  border: 3px solid #222;
+  color: #222;
+  font-size: 23px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+/* line 117, ../sass/site-parts/_team.scss */
+#team .team-list .team-hiring .apply-description .apply-btn:hover {
+  background: #222;
+  color: red;
+  border-color: red;
+}
+
+/* line 1, ../sass/site-parts/_big-video.scss */
+#big-video {
+  position: relative;
+  overflow: hidden;
+  background-color: #080808;
+  min-height: 500px;
+}
+/* line 6, ../sass/site-parts/_big-video.scss */
+#big-video video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-size: cover;
+  opacity: .3;
+}
+
+/* line 2, ../sass/site-parts/_skills.scss */
+#skills h2 {
+  position: relative;
+  margin: 110px auto;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222;
+  font-family: BigJohn;
+  font-size: 30px;
+}
+/* line 10, ../sass/site-parts/_skills.scss */
+#skills h2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 86px;
+  height: 2px;
+  margin: 50px auto;
+  background-color: #222;
+}
+/* line 22, ../sass/site-parts/_skills.scss */
+#skills p {
+  max-width: 742px;
+  margin: 100px auto 60px;
+  text-align: center;
+  color: #222;
+  line-height: 36px;
+  font-weight: 300;
+}
+/* line 31, ../sass/site-parts/_skills.scss */
+#skills .skills-item li {
+  display: inline-block;
+  max-width: 350px;
+  padding: 0 10px;
+}
+/* line 35, ../sass/site-parts/_skills.scss */
+#skills .skills-item li img {
+  display: block;
+  margin: 0 auto;
+}
+/* line 39, ../sass/site-parts/_skills.scss */
+#skills .skills-item li .fix-img {
+  margin: 30px auto 0;
+}
+/* line 42, ../sass/site-parts/_skills.scss */
+#skills .skills-item li .fix-img-last {
+  margin: 19px auto 0;
+}
+/* line 45, ../sass/site-parts/_skills.scss */
+#skills .skills-item li h4 {
+  margin: 40px 0;
+  font-size: 24px;
+  color: #200;
+  text-align: center;
+}
+/* line 51, ../sass/site-parts/_skills.scss */
+#skills .skills-item li .descr-item {
+  margin: 0;
+}
+/* line 56, ../sass/site-parts/_skills.scss */
+#skills .bx-wrapper {
+  margin-bottom: 80px;
+}
+
+/* line 1, ../sass/site-parts/_quote.scss */
+#quote {
+  overflow: hidden;
+  background: url("../images/quote-bg.jpg") center/cover no-repeat;
+}
+/* line 4, ../sass/site-parts/_quote.scss */
+#quote h2 {
+  margin: 180px auto;
+  text-align: center;
+}
+/* line 8, ../sass/site-parts/_quote.scss */
+#quote a {
+  border: 3px solid white;
+  padding: 35px 35px;
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  transition: 0.5s;
+}
+@media screen and (min-width: 410px) {
+  /* line 8, ../sass/site-parts/_quote.scss */
+  #quote a {
+    padding: 40px 90px;
+  }
+}
+/* line 18, ../sass/site-parts/_quote.scss */
+#quote a:hover {
+  opacity: 0.5;
+}
+
+/* line 1, ../sass/site-parts/_contact.scss */
+.contact {
+  background: #fff;
+}
+/* line 3, ../sass/site-parts/_contact.scss */
+.contact h2 {
+  position: relative;
+  margin: 110px auto;
+  text-transform: uppercase;
+  text-align: center;
+  color: #222;
+  font-family: BigJohn;
+  font-size: 30px;
+}
+/* line 11, ../sass/site-parts/_contact.scss */
+.contact h2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 86px;
+  height: 2px;
+  margin: 50px auto;
+  background-color: #222;
+}
+/* line 23, ../sass/site-parts/_contact.scss */
+.contact p {
+  max-width: 742px;
+  margin: 100px auto 60px;
+  text-align: center;
+  color: #222;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+/* line 32, ../sass/site-parts/_contact.scss */
+.contact-info {
+  text-align: center;
+  padding: 0 5px 30px;
+  background: #f2f2f2;
+}
+/* line 36, ../sass/site-parts/_contact.scss */
+.contact-info h4 {
+  font: 24px/60px 'BIGJOHN';
+  margin: 0 auto 20px;
+}
+/* line 40, ../sass/site-parts/_contact.scss */
+.contact-info p {
+  font: italic 22px/40px 'AmbleLight';
+  margin-bottom: 25px;
+}
+/* line 44, ../sass/site-parts/_contact.scss */
+.contact-info .social-block {
+  display: block;
+}
+/* line 46, ../sass/site-parts/_contact.scss */
+.contact-info .social-block a {
+  font-size: 14px;
+  color: black;
+  display: inline-block;
+  margin-right: 25px;
+}
+/* line 53, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-facebook:hover {
+  color: #3b5998;
+  transform: scale(1.8) rotate(360deg);
+}
+/* line 57, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-facebook:active {
+  transform: scale(1.3);
+}
+/* line 62, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-twitter:hover {
+  color: #00aced;
+  transform: scale(1.8) rotate(360deg);
+}
+/* line 66, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-twitter:active {
+  transform: scale(1.3);
+}
+/* line 71, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-linkedin:hover {
+  color: #007bb6;
+  transform: scale(1.8) rotate(360deg);
+}
+/* line 75, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-linkedin:active {
+  transform: scale(1.3);
+}
+/* line 80, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-vimeo:hover {
+  color: #aad450;
+  transform: scale(1.8) rotate(360deg);
+}
+/* line 84, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-vimeo:active {
+  transform: scale(1.3);
+}
+/* line 90, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-behance:hover {
+  color: #3b5998;
+  transform: scale(1.8) rotate(360deg);
+}
+/* line 94, ../sass/site-parts/_contact.scss */
+.contact-info .social-block .fa-behance:active {
+  transform: scale(1.3);
+}
+
+/* line 100, ../sass/site-parts/_contact.scss */
+.contact-form {
+  padding: 30px 5px;
+  margin: 0 auto;
+  background: #e4e4e4;
+}
+/* line 104, ../sass/site-parts/_contact.scss */
+.contact-form input {
+  display: block;
+  width: 300px;
+  height: 35px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #afafaf;
+  margin: 0px auto 30px;
+  transition: all .5s ease;
+}
+/* line 113, ../sass/site-parts/_contact.scss */
+.contact-form input:focus {
+  border-bottom: 2px solid #d87843;
+}
+/* line 116, ../sass/site-parts/_contact.scss */
+.contact-form input:hover {
+  transform: rotate(1deg);
+}
+/* line 120, ../sass/site-parts/_contact.scss */
+.contact-form textarea {
+  width: 100%;
+  height: 55px;
+  max-width: 670px;
+  background: #e4e4e4;
+  border: none;
+  border-bottom: 2px solid #afafaf;
+  transition: all .5s ease;
+}
+/* line 128, ../sass/site-parts/_contact.scss */
+.contact-form textarea:focus {
+  border-bottom: 2px solid #d87843;
+}
+/* line 131, ../sass/site-parts/_contact.scss */
+.contact-form textarea:hover {
+  transform: rotate(1deg);
+}
+/* line 135, ../sass/site-parts/_contact.scss */
+.contact-form input[type=button] {
+  display: block;
+  margin: 0 auto;
+  max-width: 430px;
+  height: 100px;
+  background: none;
+  color: #fff;
+  font: 700 30px/100px "AmbleBold";
+  text-align: center;
+  border: 3px solid white;
+  color: #222;
+  border-color: #222;
+  width: 183px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  margin-top: 40px;
+}
+/* line 145, ../sass/site-parts/_contact.scss */
+.contact-form input[type=button]:hover {
+  transition: 0.5s ease-in-out;
+  background: #e29158;
+  cursor: pointer;
+  border: 3px solid #e29158;
+  box-shadow: 3.5px 3.6px 0 rgba(0, 0, 0, 0.22);
+}
+/* line 152, ../sass/site-parts/_contact.scss */
+.contact-form input[type=button]:active {
+  transform: scale(0.9);
+}
+
+@media (min-width: 769px) {
+  /* line 166, ../sass/site-parts/_contact.scss */
+  .contact-info {
+    position: relative;
+    min-height: 380px;
+    padding: 8px 0 25px 0;
+    text-align: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 172, ../sass/site-parts/_contact.scss */
+  .contact-info:before {
+    position: absolute;
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 228%;
+    top: 0;
+    left: -886px;
+    background: #f2f2f2;
+  }
+
+  /* line 183, ../sass/site-parts/_contact.scss */
+  .contact-grid-right {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  /* line 187, ../sass/site-parts/_contact.scss */
+  input[type=text] {
+    float: left;
+    max-width: 45%;
+  }
+
+  /* line 191, ../sass/site-parts/_contact.scss */
+  input[type=email] {
+    max-width: 45%;
+  }
+
+  /* line 194, ../sass/site-parts/_contact.scss */
+  .contact-form {
+    position: relative;
+    min-height: 407px;
+    padding: 100px 20px 0 100px;
+  }
+  /* line 198, ../sass/site-parts/_contact.scss */
+  .contact-form:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 129%;
+    top: 0;
+    right: -1000px;
+    background: #e4e4e4;
+  }
+
+  /* line 209, ../sass/site-parts/_contact.scss */
+  input[type=button] {
+    float: right;
+  }
+}
+/* line 1, ../sass/layout/_footer.scss */
+footer {
+  background-color: #222;
+}
+/* line 3, ../sass/layout/_footer.scss */
+footer .container {
+  padding: 100px 5px;
+}
+/* line 5, ../sass/layout/_footer.scss */
+footer .container .footer-logo-block {
+  max-width: 380px;
+  color: #fff;
+  margin: 0 auto 70px;
+}
+/* line 9, ../sass/layout/_footer.scss */
+footer .container .footer-logo-block img {
+  max-width: 100%;
+}
+/* line 13, ../sass/layout/_footer.scss */
+footer .container p {
+  text-align: center;
+  display: block;
+  font: 16px/40px "AmbleRegular";
+  color: #e4e4e4;
+}
+/* line 18, ../sass/layout/_footer.scss */
+footer .container p a {
+  color: #d87843;
+  font: 16px/40px "AmbleBold";
+}
+/* line 21, ../sass/layout/_footer.scss */
+footer .container p a:hover {
+  text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65);
+}
+
+/* line 21, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 57, ../sass/style.scss */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+/* line 12, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 62, ../sass/style.scss */
+img {
+  max-width: 100%;
+}

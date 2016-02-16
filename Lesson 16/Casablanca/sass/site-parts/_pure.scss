@@ -1,0 +1,22 @@
+#pure{
+  overflow: hidden;
+  background: url('../images/pure-bg.jpg') center/cover no-repeat;
+  h2{
+    margin:180px auto;
+    text-align: center;
+  }
+  a{
+    border: 3px solid white;
+    padding: 40px 40px;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    transition: 0.5s;
+    @media screen and (min-width: 410px){
+      padding: 40px 90px;
+    }
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+}

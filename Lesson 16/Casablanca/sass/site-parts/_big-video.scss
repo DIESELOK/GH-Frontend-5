@@ -1,0 +1,17 @@
+#big-video {
+  position: relative;
+  overflow: hidden;
+  background-color: #080808;
+  min-height: 500px;
+  video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    opacity: .3;
+  }
+}

@@ -1,0 +1,42 @@
+.hero {
+  overflow:hidden;
+  position: relative;
+  background: url("../images/hero-bg.jpg") center/cover no-repeat;
+  .hero-title {
+    position: relative;
+    margin: 320px 0 45px;
+    text-align: center;
+    @media screen and (min-width:930px){
+      margin-top: 18%;
+    }
+      color: white;
+      font-family: BigJohn;
+      font-size: 48px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    &:after{
+      content:'';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 86px;
+      height: 2px;
+      margin:50px auto;
+      background-color: white;
+    }
+  }
+  p {
+    max-width:628px;
+    margin:100px auto 20%;
+    text-align: center;
+    letter-spacing: 2px;
+      color: #fffefe;
+      line-height: 30px;
+  }
+  a{
+    display:block;
+    margin:0 auto 50px;
+    text-align: center;
+  }
+}

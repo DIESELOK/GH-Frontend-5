@@ -1,0 +1,108 @@
+body{
+	margin: 0px;
+}
+.wrapper{
+	border: 0px;
+	margin: 170px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-family: Times New Roman, Arial, Helvetica, Verdana, sans-serif;
+	font-size: 11pt; 
+}
+fieldset{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+fieldset legend{
+	font-weight: bold;
+}
+fieldset dl dt{
+	float: left;
+	padding-right: 5px;
+	text-align: right;
+    margin-right: 5px;
+    vertical-align: top;
+    top: 3px;
+}
+form dd {
+    margin-bottom: 10px;
+}
+.radio_man{
+	float: left;
+	margin-left: 0px;
+	padding-right: 4px;
+}
+.chk_relax{
+	margin-top: 30px;
+	font-weight: bold;
+	float: none;
+	text-align: left;
+}
+.book{
+	margin-top: 0px;
+	font-weight: bold;
+	float: none;
+	text-align: left;
+}
+.select{
+	margin-left:0px;
+	margin-top:10px;
+}
+.radio_books{
+	margin-top: 30px;
+	font-weight: bold;
+	float: none;
+	text-align: left;
+}
+.comments{
+	margin-top: 30px;
+	font-weight: bold;
+	float: none;
+	text-align: left;
+}
+.textarea{
+	margin-left: 0px;
+}
+.position{
+	margin-top: 10px;
+	font-weight: bold;
+	float: none;
+	text-align: left;
+}
+.dis_text{
+	float: none;
+	margin-bottom: 10px;
+}
+.email{
+	margin-top: 30px;
+	font-weight: bold;
+	float: none;
+	text-align: left;
+}
+.email_inp{
+	margin-left: 0px;
+}
+.spam{
+	margin-top: 30px;
+	margin-bottom:3px;
+	font-weight: bold;
+	float: none;
+	text-align: left;
+}
+.category{
+	margin-top: 0px;
+}
+.sel_category{
+	font-style: italic;
+	margin-top: 3px;
+	margin-bottom: 10px;
+	float: none;
+	text-align: left;
+}
+.task{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-weight: bold;
+	float: none;
+	text-align: left;
+}

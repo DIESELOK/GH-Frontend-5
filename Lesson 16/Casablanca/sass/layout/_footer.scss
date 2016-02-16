@@ -1,0 +1,27 @@
+footer {
+  background-color: #222;
+  .container {
+    padding: 100px 5px;
+    .footer-logo-block {
+      max-width: 380px;
+      color: #fff;
+      margin: 0 auto 70px;
+      img {
+        max-width: 100%;
+      }
+    }
+    p {
+      text-align: center;
+      display: block;
+      font: 16px/40px "AmbleRegular";
+      color: #e4e4e4;
+      a {
+        color: #d87843;
+        font: 16px/40px "AmbleBold";
+        &:hover {
+          text-shadow: 0 1px 1px rgba(0, 3, 1, 0.65)
+        }
+      }
+    }
+  }
+}

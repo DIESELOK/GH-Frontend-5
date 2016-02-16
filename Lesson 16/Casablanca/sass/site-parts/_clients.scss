@@ -1,0 +1,27 @@
+#clients{
+  overflow: hidden;
+  h2{
+    margin: 100px 0;
+    color: #222;
+    font-family: BigJohn;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    &:after{
+      content:'';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 86px;
+      height: 2px;
+      margin:50px auto;
+      background-color: #222;
+    }
+  }
+
+  .bx-wrapper{
+    margin-bottom:130px;
+  }
+}
