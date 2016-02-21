@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@font-face {
+  font-family: 'Eurofurenceregular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Eurofurenceregular'), url('../fonts/eurofurence.ttf') format('truetype');
+}
+
+@import 'compass';
+@import "grids";
+@import "reset";
+@import "layout/header";
+@import "site-parts/aside";
+@import "site-parts/content";
+@import "site-parts/navigation";
+@import "layout/footer";
+
+@include border-box-sizing();
+.container{
+  @include container();
+  padding:0 15px;
+  overflow: hidden;
+}
+img{
+  max-width:100%;
+}
