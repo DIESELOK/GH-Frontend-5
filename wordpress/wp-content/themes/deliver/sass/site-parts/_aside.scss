@@ -1,0 +1,62 @@
+.right-aside{
+  margin-bottom:40px;
+  @media screen and (min-width: 935px){
+    float: right;
+    max-width: 280px;
+  }
+  h2{
+    margin-bottom: 15px;
+    border-left:1px solid #58c93a;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    box-shadow: inset 3px 0 0 #58c93a;
+    text-align: left;
+    color: #6c6969;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  p{
+    margin-bottom: 25px;
+    padding: 0 15px;
+    color: #737373;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  input{
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    border: 1px solid #e1e0e0;
+    font-size: 16px;
+    color: #6c6969;
+    background-color: white;
+  }
+  input::-moz-placeholder     {text-overflow:ellipsis; color: #b9b9b9; font-size: 12px; opacity: 1; transition: opacity 0.3s ease;}
+  input:-moz-placeholder      {text-overflow:ellipsis; color: #b9b9b9; font-size: 12px; opacity: 1; transition: opacity 0.3s ease;}
+  input:-ms-input-placeholder {text-overflow:ellipsis; color: #b9b9b9; font-size: 12px; opacity: 1; transition: opacity 0.3s ease;}
+
+  .main-descript{
+    margin-bottom: 50px;
+  }
+  .search{
+    margin-bottom: 75px;
+  }
+  .tuned-mail{
+    form{
+      position: relative;
+      button{
+        position: absolute;
+        right: 0;
+        top:0px;
+        bottom:0px;
+        border:none;
+        background: transparent;
+      }
+      .fa{
+        font-size: 30px;
+        color: #e1e0e0;
+      }
+    }
+  }
+}

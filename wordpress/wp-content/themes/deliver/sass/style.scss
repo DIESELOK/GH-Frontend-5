@@ -1,0 +1,43 @@
+/*
+Theme Name: Deliver
+Author: DIESEL
+Author URI: http://dieselok.github.com/
+Version: 1.0
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@font-face {
+  font-family: 'Novecentowide';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Novecentowide'), url('/fonts/Novecentosanswide-DemiBold-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'HelveticaNeue';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Neue'), url('/fonts/helveticaneue-regular-webfont.ttf') format('truetype');
+}
+
+@import 'compass';
+@import "grids";
+@import "reset";
+@import "layout/header";
+@import "layout/footer";
+
+@include border-box-sizing();
+.container{
+  @include container();
+  padding:0 10px;
+  overflow: hidden;
+}
+.clear::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+img{
+  max-width:100%;
+}
