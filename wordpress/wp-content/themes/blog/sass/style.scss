@@ -1,0 +1,33 @@
+/*
+Theme Name: Blog
+Author: DIESEL
+Author URI: http://dieselok.github.com/
+Version: 1.0
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+@import 'compass';
+@import "grids";
+@import "reset";
+@import "layout/header";
+@import "site-parts/main-content";
+@import "site-parts/main-sidebar";
+@import "layout/footer";
+
+@include border-box-sizing();
+.container{
+  @include container();
+  padding:0 10px;
+  overflow: hidden;
+}
+.clear::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+img{
+  max-width:100%;
+}
